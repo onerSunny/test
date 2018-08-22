@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>笔记</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="../css/find_notes.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../font_xld8by73zt/iconfont.css">
+		<link href="../css/jquery.snippet.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<!-- container -->
+		  	<div class="container">
+			    <div class="navbar-header logo-center">
+			      	<!-- logo -->
+			      	<a class="navbar-brand" href="../index.html">
+				      	<h1>
+				      		<img src="../images/logo-b.svg" alt="">
+				      	</h1>
+				    </a>
+			    </div>
+
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    		<span class="glyphicon glyphicon-search top_search visible-sm visible-xs"></span>
+	    			<!-- 左侧导航条 -->
+	    			<div class="change clearfix hidden-sm hidden-xs">
+				      	<ul class="nav navbar-nav clearfix">
+					        <li class="active"><a href="../index.html">首页<span class="sr-only">(current)</span></a></li>
+					        <li><a href="Question-and-answer.html">问答</a></li>
+					        <li><a href="special.html">专栏</a></li>
+					        <li><a href="lecture.html">讲堂</a></li>
+					        <li class="dropdown find">
+					          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现<span class="caret"></span></a>
+					          	<div class="dropdown-block">
+						          	<ul class="dropdown-menu clearfix">
+							            <li><a href="circle.html">圈子</a></li>
+							            <li><a href="activity.html">活动</a></li>
+							            <li><a href="#">标签</a></li>
+							            <li><a href="find_work.html">找工作</a></li>
+							            <li><a href="#">排行榜</a></li>
+							            <li><a href="find_work.html">找工作</a></li>
+							            <li><a href="#">徽章</a></li>
+							            <li><a href="find_notes.html">笔记</a></li>
+							            <li><a href="#">开发手册</a></li>
+							            <li><a href="#">广告投放</a></li>
+							        </ul>
+							        <div class="ul-active">
+							        	<a href="activity_isc.html">
+							        		<h5>2018首届“顶天立地”iFLYTEK AI开发者大赛</h5>
+							        	</a>
+							        	<span>合肥</span> · 
+							        	<span>2018-07-11 周三</span> · 
+							        	<span>报名中</span>
+							        	<div class="more">
+							        		<a href="activity.html">查看更多活动</a>
+							        	</div>
+							        </div>
+						        </div>
+					        </li>
+				        </ul>
+				        <!-- 搜索框 -->
+			      		<form class="navbar-form navbar-left clearfix">
+					        <div class="form-group">
+					          <input type="text" class="form-control" placeholder="搜索问题或关键字">
+					          <span class="glyphicon glyphicon-search search visible-lg"></span>
+					        </div>
+			      		</form>
+		      		</div>
+	      		    <!-- 右侧导航条和图标 -->
+		      		<ul class="nav navbar-nav navbar-right">
+				        <li class="dropdown found visible-lg">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">创建<span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="question.html">提问题</a></li>
+				            <li><a href="headline.html">发头条</a></li>
+				            <li><a href="article.html">写文章</a></li>
+				            <li><a href="note.html">记笔记</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">草稿箱</a></li>
+				          </ul>
+				        </li>
+				        <li class="dropdown found hidden-lg">
+				          <a href="#" class="dropdown-toggle fa fa-plus" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="question.html">提问题</a></li>
+				            <li><a href="headline.html">发头条</a></li>
+				            <li><a href="article.html">写文章</a></li>
+				            <li><a href="note.html">记笔记</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">草稿箱</a></li>
+				          </ul>
+				        </li>
+				        <li class="index-msg-li">
+				        	<a href="#" class="fa fa-bell-o hidden-sm hidden-xs"></a>
+				        	<div class="index-msg clearfix">
+				        		<div class="msg-header">
+				        			<ul class="clearfix">
+				        				<li class="active"><a href="#"><i class="fa fa-bullhorn"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-commenting-o"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-user-plus"></i></a></li>
+				        			</ul>
+				        		</div>
+				        		<div class="msg-body"></div>
+				        		<div class="msg-footer">
+				        			<span>查看全部 >> </span>
+				        		</div>
+				        	</div>
+				        </li>
+				        <li class="index-private-li"> 
+				        	<a href="#" class="fa fa-envelope-o hidden-sm hidden-xs"></a>
+				        	<div class="index-private clearfix">
+				        		<div class="msg-header">
+				        			<span>最近的私信</span>
+				        		</div>
+				        		<div class="msg-body">
+				        			<p>没有人给你发私信</p>
+				        		</div>
+				        		<div class="msg-footer">
+				        			<span>查看全部 >> </span>
+				        		</div>
+				        	</div>
+				        </li>
+				        <li class="me">
+				        	<a href="personal.html" class="user"><img src="../images/user-64.png" alt="头像"></a>
+				        	<div class="user-info">
+				        		<div class="info-score clearfix">
+				        			<span>1 声望</span>
+				        			<div class="clearfix">
+				        				<span><b></b>0</span>
+				        				<span><b></b>1</span>
+				        				<span><b></b>2</span>
+				        			</div>
+				        		</div>
+				        		<hr>
+				        		<div class="info">
+				        			<ul class="clearfix">
+				        				<li><a href="#">我的笔记</a></li>
+				        				<li><a href="#">我的主页</a></li>
+				        				<li><a href="#">我的收藏</a></li>
+				        				<li><a href="#">我的档案</a></li>
+				        				<li><a href="#">受邀回答</a></li>
+				        				<li><a href="#">我的资产</a></li>
+				        				<li><a href="#">付费问答</a></li>
+				        				<li><a href="personal.html">个人设置</a></li>
+				        				<li><a href="#">退出</a></li>
+				        			</ul>
+				        		</div>
+				        		<hr>
+				        		<div class="info-footer">
+				        			<a href="#">用户申诉</a> · 
+				        			<a href="#">建议反馈</a> · 
+				        			<a href="#">邀请朋友</a>
+				        		</div>
+				        	</div>
+				        </li>
+		      		</ul>
+		    	</div>
+		    </div>
+		</nav>
+		<!-- 小屏底部导航条 -->
+		<nav class="phone-nav hidden-md hidden-lg">
+			<ul>
+				<li class="active">
+					<a href="../index.hmtl"><i class="fa fa-home"></i><span>首页</span></a>
+				</li>
+				<li>
+					<a href="Question-and-answer.html"><i class="fa fa-comments"></i><span>问答</span></a>
+				</li>
+				<li><a href="special.html"><i class="fa fa-pencil-square"></i><span>专栏</span></a></li>
+				<li><a href="lecture.html"><i class="fa fa-play-circle"></i><span>讲堂</span></a></li>
+				<li class="phone-nav-dropdown">
+					<a href="#"><i class="fa fa-bars"></i><span>更多</span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">职位</a></li>
+						<li><a href="activity.html">活动</a></li>
+						<li><a href="#">标签</a></li>
+						<li><a href="#">徽章</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="top" style="height:50px;border-bottom: 1px solid #eee;"></div>
+				</div>
+			</div>
+		</section>
+		<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="note_main">
+						<!-- item1文字框 -->
+						<div class="note_item">
+							<!-- 标题 -->
+							<div class="media">
+							  <div class="media-left">
+							      <a href="#">
+							        <img class="media-object" src="../images/user-3.png" alt="...">
+							      </a>
+							    </div>
+							  <div class="media-body">
+							    <a href=""><h4 class="media-heading">linux关于本地化的设置</h4></a>
+							    <h4 class="note_data"><small>hiYoHoo · 发布于 1 小时前</small></h4>
+							  </div>
+							<!-- 内容 -->
+							<div class="note_item_content lec_item_text">
+								<p>文件 <span class="p_pink">/etc/locale.gen</span>中取消 关于utf-8的注释，执行命令 <span class="p_pink">locale-gen</span> </p>
+								<p>文件 <span class="p_pink">/etc/locale.conf</span>中设置： <span class="p_pink">LANG=zh_CN.UTF-8</span></p>
+								<br>
+								<p> <span class="p_pink">.bashrc:</span> 每次终端时读取并运用里面的设置 </p>
+								<p> <span class="p_pink">.profile:</span>每次启动系统的读取并运用里面的配置</p>
+								<p> <span class="p_pink">.xinitrc:</span>每次startx启动X界面时读取并运用里面的设置 </p>
+								<p> <span class="p_pink">.xprofile:</span>每次使用lightdm等图形登录管理器时读取并运用里面的设置（推荐）</p>
+							</div>
+						</div>
+						<!-- item2表格 -->
+						<div class="note_item">
+							<!-- 标题 -->
+							<div class="media">
+							  <div class="media-left">
+							      <a href="#">
+							        <img class="media-object" src="../images/user-3.png" alt="...">
+							      </a>
+							    </div>
+							  <div class="media-body">
+							    <a href=""><h4 class="media-heading">systemd 命令与 sysvinit 命令对比</h4></a>
+							    <h4 class="note_data"><small>hiYoHoo · 发布于 10 小时前</small></h4>
+							  </div>
+							<!-- 内容 -->
+							<div class="note_item_content">
+								<div class="table-responsive">
+									<table class="table">
+										<th class="active">sysvinit 命令</th>
+										<th class="active">systemd 命令</th>
+										<th class="active">说明</th>
+
+										<tr>
+											<td>service httpd start	</td>
+											<td>systemctl start httpd.service</td>
+											<td>启动httpd服务</td>
+										</tr>
+										<tr>
+											<td>service httpd stop	</td>
+											<td>systemctl stop httpd.service</td>
+											<td>关闭httpd服务</td>
+										</tr>
+										<tr>
+											<td>service httpd start	</td>
+											<td>systemctl start httpd.service</td>
+											<td>启动httpd服务</td>
+										</tr>
+										<tr class="last_tr">
+											<td>service httpd stop	</td>
+											<td>systemctl stop httpd.service</td>
+											<td>关闭httpd服务</td>
+										</tr>
+									</table>
+								</div>
+								
+							</div>
+						</div>
+
+
+					<!-- item3隐藏 -->
+					<div class="note_item hide_item">
+						<div class="media">
+						  <div class="media-left">
+						      <a href="#">
+						        <img class="media-object" src="../images/user-2.png" alt="...">
+						      </a>
+						    </div>
+						  <div class="media-body">
+						    <a href=""><h4 class="media-heading">多个数字倒序组成一个数字</h4></a>
+						    <h4 class="note_data"><small>hiYoHoo · 发布于 1 小时前</small></h4>
+						  </div>
+						  <div class="note_code">
+						  	<div class="snippet-container" style="undefined;"><div class="sh_ide-devcpp snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy" href="#" style="display: none;">copy</a></pre></div><pre id="demo" class="sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li>int a<span class="sh_symbol">[]</span> <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span><span class="sh_number">1</span><span class="sh_symbol">,</span><span class="sh_number">2</span><span class="sh_symbol">,</span><span class="sh_number">3</span><span class="sh_symbol">,</span><span class="sh_number">4</span><span class="sh_symbol">,</span><span class="sh_number">5</span><span class="sh_cbracket">}</span><span class="sh_symbol">;</span></li><li>int result<span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span></li><li>int current <span class="sh_symbol">=</span> <span class="sh_number">1</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">for</span> <span class="sh_symbol">(</span>int i <span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span> i <span class="sh_symbol">&lt;</span> a<span class="sh_symbol">.</span>length<span class="sh_symbol">;</span> i<span class="sh_symbol">++)</span> <span class="sh_cbracket">{</span></li><li>    result <span class="sh_symbol">=</span> result <span class="sh_symbol">+</span> a<span class="sh_symbol">[</span>i<span class="sh_symbol">]*</span>current<span class="sh_symbol">;</span></li><li>    current <span class="sh_symbol">=</span> current<span class="sh_symbol">*</span><span class="sh_number">10</span><span class="sh_symbol">;</span></li><li><span class="sh_cbracket">}</span></li><li>System<span class="sh_symbol">.</span>out<span class="sh_symbol">.</span><span class="sh_function">println</span><span class="sh_symbol">(</span>result<span class="sh_symbol">);</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">int a[] = {1,2,3,4,5};
+int result= 0;
+int current = 1;
+for (int i = 0; i &lt; a.length; i++) {
+result = result + a[i]*current;
+current = current*10;
+}
+System.out.println(result);</pre></div></div><!--！！！！！！不要换行！！！！！！ -->
+						  </div>
+						</div>
+
+						</div>
+						<!-- item4文字框 -->
+						<div class="note_item">
+							<!-- 标题 -->
+							<div class="media">
+							  <div class="media-left">
+							      <a href="#">
+							        <img class="media-object" src="../images/user-3.png" alt="...">
+							      </a>
+							    </div>
+							  <div class="media-body">
+							    <a href=""><h4 class="media-heading">linux关于本地化的设置</h4></a>
+							    <h4 class="note_data"><small>hiYoHoo · 发布于 1 小时前</small></h4>
+							  </div>
+							</div>
+							<!-- 内容 -->
+							<div class="note_item_content lec_item_text">
+								<p>文件 <span class="p_pink">/etc/locale.gen</span>中取消 关于utf-8的注释，执行命令 <span class="p_pink">locale-gen</span> </p>
+								<p>文件 <span class="p_pink">/etc/locale.conf</span>中设置： <span class="p_pink">LANG=zh_CN.UTF-8</span></p>
+								<br>
+								<p> <span class="p_pink">.bashrc:</span> 每次终端时读取并运用里面的设置 </p>
+								<p> <span class="p_pink">.profile:</span>每次启动系统的读取并运用里面的配置</p>
+								<p> <span class="p_pink">.xinitrc:</span>每次startx启动X界面时读取并运用里面的设置 </p>
+								<p> <span class="p_pink">.xprofile:</span>每次使用lightdm等图形登录管理器时读取并运用里面的设置（推荐）</p>
+							</div>
+						</div>
+						<!-- item5代码 -->
+						<div class="note_item">
+							<div class="media">
+							  <div class="media-left">
+							      <a href="#">
+							        <img class="media-object" src="../images/user-2.png" alt="...">
+							      </a>
+							    </div>
+							  <div class="media-body">
+							    <a href=""><h4 class="media-heading">多个数字倒序组成一个数字</h4></a>
+							    <h4 class="note_data"><small>hiYoHoo · 发布于 2 小时前</small></h4>
+							  </div>
+							  <div class="note_code">
+							  	<div class="snippet-container" style="undefined;"><div class="sh_ide-devcpp snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy" href="#" style="display: none;">copy</a></pre></div><pre id="demo" class="sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li>int a<span class="sh_symbol">[]</span> <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span><span class="sh_number">1</span><span class="sh_symbol">,</span><span class="sh_number">2</span><span class="sh_symbol">,</span><span class="sh_number">3</span><span class="sh_symbol">,</span><span class="sh_number">4</span><span class="sh_symbol">,</span><span class="sh_number">5</span><span class="sh_cbracket">}</span><span class="sh_symbol">;</span></li><li>int result<span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span></li><li>int current <span class="sh_symbol">=</span> <span class="sh_number">1</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">for</span> <span class="sh_symbol">(</span>int i <span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span> i <span class="sh_symbol">&lt;</span> a<span class="sh_symbol">.</span>length<span class="sh_symbol">;</span> i<span class="sh_symbol">++)</span> <span class="sh_cbracket">{</span></li><li>    result <span class="sh_symbol">=</span> result <span class="sh_symbol">+</span> a<span class="sh_symbol">[</span>i<span class="sh_symbol">]*</span>current<span class="sh_symbol">;</span></li><li>    current <span class="sh_symbol">=</span> current<span class="sh_symbol">*</span><span class="sh_number">10</span><span class="sh_symbol">;</span></li><li><span class="sh_cbracket">}</span></li><li>System<span class="sh_symbol">.</span>out<span class="sh_symbol">.</span><span class="sh_function">println</span><span class="sh_symbol">(</span>result<span class="sh_symbol">);</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">int a[] = {1,2,3,4,5};
+int result= 0;
+int current = 1;
+for (int i = 0; i &lt; a.length; i++) {
+    result = result + a[i]*current;
+    current = current*10;
+}
+System.out.println(result);</pre></div></div><!--！！！！！！不要换行！！！！！！ -->
+							  </div>
+							</div>
+
+						</div>
+						<!-- item6代码 -->
+						<div class="note_item">
+							<div class="media">
+							  <div class="media-left">
+							      <a href="#">
+							        <img class="media-object" src="../images/user-2.png" alt="...">
+							      </a>
+							    </div>
+							  <div class="media-body">
+							    <a href=""><h4 class="media-heading">多个数字倒序组成一个数字</h4></a>
+							    <h4 class="note_data"><small>hiYoHoo · 发布于 3 小时前</small></h4>
+							  </div>
+							  <div class="note_code">
+							  	<div class="snippet-container" style="undefined;"><div class="sh_ide-devcpp snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy" href="#" style="display: none;">copy</a></pre></div><pre id="demo" class="sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li>int a<span class="sh_symbol">[]</span> <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span><span class="sh_number">1</span><span class="sh_symbol">,</span><span class="sh_number">2</span><span class="sh_symbol">,</span><span class="sh_number">3</span><span class="sh_symbol">,</span><span class="sh_number">4</span><span class="sh_symbol">,</span><span class="sh_number">5</span><span class="sh_cbracket">}</span><span class="sh_symbol">;</span></li><li>int result<span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span></li><li>int current <span class="sh_symbol">=</span> <span class="sh_number">1</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">for</span> <span class="sh_symbol">(</span>int i <span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span> i <span class="sh_symbol">&lt;</span> a<span class="sh_symbol">.</span>length<span class="sh_symbol">;</span> i<span class="sh_symbol">++)</span> <span class="sh_cbracket">{</span></li><li>    result <span class="sh_symbol">=</span> result <span class="sh_symbol">+</span> a<span class="sh_symbol">[</span>i<span class="sh_symbol">]*</span>current<span class="sh_symbol">;</span></li><li>    current <span class="sh_symbol">=</span> current<span class="sh_symbol">*</span><span class="sh_number">10</span><span class="sh_symbol">;</span></li><li><span class="sh_cbracket">}</span></li><li>System<span class="sh_symbol">.</span>out<span class="sh_symbol">.</span><span class="sh_function">println</span><span class="sh_symbol">(</span>result<span class="sh_symbol">);</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">int a[] = {1,2,3,4,5};
+int result= 0;
+int current = 1;
+for (int i = 0; i &lt; a.length; i++) {
+    result = result + a[i]*current;
+    current = current*10;
+}
+System.out.println(result);</pre></div></div>
+							  </div>
+							</div>
+
+						</div>
+						<!-- item7代码 -->
+						<div class="note_item">
+							<div class="media">
+							  <div class="media-left">
+							      <a href="#">
+							        <img class="media-object" src="../images/user-2.png" alt="...">
+							      </a>
+							    </div>
+							  <div class="media-body">
+							    <a href=""><h4 class="media-heading">多个数字倒序组成一个数字</h4></a>
+							    <h4 class="note_data"><small>hiYoHoo · 发布于 4 小时前</small></h4>
+							  </div>
+							  <div class="note_code">
+							  	<div class="snippet-container" style="undefined;"><div class="sh_ide-devcpp snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy" href="#" style="display: none;">copy</a></pre></div><pre id="demo" class="sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li>int a<span class="sh_symbol">[]</span> <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span><span class="sh_number">1</span><span class="sh_symbol">,</span><span class="sh_number">2</span><span class="sh_symbol">,</span><span class="sh_number">3</span><span class="sh_symbol">,</span><span class="sh_number">4</span><span class="sh_symbol">,</span><span class="sh_number">5</span><span class="sh_cbracket">}</span><span class="sh_symbol">;</span></li><li>int result<span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span></li><li>int current <span class="sh_symbol">=</span> <span class="sh_number">1</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">for</span> <span class="sh_symbol">(</span>int i <span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span> i <span class="sh_symbol">&lt;</span> a<span class="sh_symbol">.</span>length<span class="sh_symbol">;</span> i<span class="sh_symbol">++)</span> <span class="sh_cbracket">{</span></li><li>    result <span class="sh_symbol">=</span> result <span class="sh_symbol">+</span> a<span class="sh_symbol">[</span>i<span class="sh_symbol">]*</span>current<span class="sh_symbol">;</span></li><li>    current <span class="sh_symbol">=</span> current<span class="sh_symbol">*</span><span class="sh_number">10</span><span class="sh_symbol">;</span></li><li><span class="sh_cbracket">}</span></li><li>System<span class="sh_symbol">.</span>out<span class="sh_symbol">.</span><span class="sh_function">println</span><span class="sh_symbol">(</span>result<span class="sh_symbol">);</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">int a[] = {1,2,3,4,5};
+int result= 0;
+int current = 1;
+for (int i = 0; i &lt; a.length; i++) {
+    result = result + a[i]*current;
+    current = current*10;
+}
+System.out.println(result);</pre></div></div><!--！！！！！！不要换行！！！！！！ -->
+							  </div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+						<!-- 分页 -->
+							<div class="col_page">
+								<nav aria-label="Page navigation">
+								  <ul class="pagination">
+								    <li class="page_active"><a href="#">1</a></li>
+								    <li><a href="#">2</a></li>
+								    <li><a href="#">3</a></li>
+								    <li><a href="#">4</a></li>
+								    <li>
+								      <a href="#" aria-label="Next">
+								        <span aria-hidden="true">下一页</span>
+								      </a>
+								    </li>
+								  </ul>
+								</nav>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="note_login">
+						<p>SegmentFault 是一个专注于解决编程问题，提高开发技能的社区。</p>
+						<div class="note_btn">
+							<button class="btn btn-primary"><i class="fa fa-google" aria-hidden="true"></i>使用Google登录</button>
+							<button class="btn btn-danger"><i class="fa fa-weibo" aria-hidden="true"></i>使用微博登录</button>
+							<button class="btn btn-success"><i class="fa fa-weixin" aria-hidden="true"></i>使用微信登录</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		</section>
+		<!-- footer -->
+	<footer>
+		<div class="container">
+			<!-- footer_con -->
+			<div class="footer_con">
+				<div class="col-md-2 f_con">
+					<h4>产品</h4>
+					<ul class="f_ul">
+						<li>热门回答</li>
+						<li>热门专栏</li>
+						<li>热门讲堂</li>
+						<li>最新活动</li>
+						<li>圈子</li>
+						<li>找工作</li>
+						<li>移动客户端</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>资源</h4>
+					<ul class="f_ul">
+						<li>每周精选</li>
+						<li>用户排行榜</li>
+						<li>徽章</li>
+						<li>帮助中心</li>
+						<li>声望与权限</li>
+						<li>社区服务中心</li>
+						<li>开发手册</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>商务</h4>
+					<ul class="f_ul">
+						<li>人才服务</li>
+						<li>企业培训</li>
+						<li>活动策划</li>
+						<li>广告投放</li>
+						<li>区块链解决方案</li>
+						<li>合作联系</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>关于</h4>
+					<ul class="f_ul">
+						<li>关于我们</li>
+						<li>加入我们</li>
+						<li>联系我们</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>关注</h4>
+					<ul class="f_ul">
+						<li>产品技术日志</li>
+						<li>社区运营日志</li>
+						<li>市场运营日志</li>
+						<li>团队日志</li>
+						<li>社区访谈</li>
+						<li class="share">
+							<i href="#" class="iconfont icon-wechat share_1">
+								<div class="share_pic">
+									<img src="../images/appQrcode.png" alt="">
+									<p>关注微信号</p>
+									<span></span>
+								</div>
+							</i>
+							<i href="#" class="iconfont icon-weibo share_2"></i>
+							<i href="#" class="iconfont icon-github share_3"></i>
+							<i href="#" class="iconfont icon-twitter share_4"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>条款</h4>
+					<ul class="f_ul">
+						<li>服务条款</li>
+						<li>内容许可</li>
+						<li class="app"><img src="../images/appQrcode.png" alt="" class="sf"></li>
+						<li>扫一扫下载APP</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 版权 copyright -->
+			<div class="copyright">
+				<p>Copyright © 2011-2018 SegmentFault. 当前呈现版本 17.06.16</p>
+				<p>
+					<a href="#" onclick="return false">浙ICP备 15005796号-2&nbsp;</a>
+					<a href="#" onclick="return false"> 浙公网安备 33010602002000号&nbsp;</a>
+					杭州堆栈科技有限公司版权所有
+				</p>
+				<p class="sponsor">
+					CDN 存储服务由
+					<a href="#" onclick="return false">又拍云</a>
+					赞助提供
+				</p>
+			</div>
+		</div>
+	</footer>	
+		<!-- 回到顶部 -->
+		<div class="col_return_top">
+			<span>回顶部</span>
+		</div>
+
+		<script src = '../js/jquery.min.js'></script>
+		<script src = '../js/nav.js'></script>
+		<script src="../js/jquery.snippet.js"></script>
+		<script src = '../js/find_notes.js'></script>
+		<script src = '../js/common.js'></script>
+		
+	</body>
+</html>

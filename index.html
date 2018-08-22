@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>思否主页</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font_xld8by73zt/iconfont.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<!-- container -->
+	  	<div class="container">
+		    <div class="navbar-header logo-center">
+		      	<!-- logo -->
+		      	<a class="navbar-brand" href="index.html">
+			      	<h1>
+			      		<img src="images/logo-b.svg" alt="">
+			      	</h1>
+			    </a>
+		    </div>
+
+	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    		<span class="glyphicon glyphicon-search top_search visible-sm visible-xs"></span>
+    			<!-- 左侧导航条 -->
+    			<div class="change clearfix hidden-sm hidden-xs">
+			      	<ul class="nav navbar-nav clearfix">
+				        <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+				        <li><a href="html/Question-and-answer.html">问答</a></li>
+				        <li><a href="html/special.html">专栏</a></li>
+				        <li><a href="html/lecture.html">讲堂</a></li>
+				        <li class="dropdown find">
+				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现<span class="caret"></span></a>
+				          	<div class="dropdown-block">
+					          	<ul class="dropdown-menu clearfix">
+						            <li><a href="html/circle.html">圈子</a></li>
+						            <li><a href="html/activity.html">活动</a></li>
+						            <li><a href="#">标签</a></li>
+						            <li><a href="html/find_work.html">找工作</a></li>
+						            <li><a href="#">排行榜</a></li>
+						            <li><a href="find_work.html">找工作</a></li>
+						            <li><a href="#">徽章</a></li>
+						            <li><a href="html/find_notes.html">笔记</a></li>
+						            <li><a href="#">开发手册</a></li>
+						            <li><a href="#">广告投放</a></li>
+						        </ul>
+						        <div class="ul-active">
+						        	<a href="html/activity_isc.html">
+						        		<h5>2018首届“顶天立地”iFLYTEK AI开发者大赛</h5>
+						        	</a>
+						        	<span>合肥</span> · 
+						        	<span>2018-07-11 周三</span> · 
+						        	<span>报名中</span>
+						        	<div class="more">
+						        		<a href="html/activity.html">查看更多活动</a>
+						        	</div>
+						        </div>
+					        </div>
+				        </li>
+			        </ul>
+			        <!-- 搜索框 -->
+		      		<form class="navbar-form navbar-left clearfix">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="搜索问题或关键字">
+				          <span class="glyphicon glyphicon-search search visible-lg"></span>
+				        </div>
+		      		</form>
+	      		</div>
+      		    <!-- 右侧导航条和图标 -->
+	      		<ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown found visible-lg">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">创建<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="html/question.html">提问题</a></li>
+			            <li><a href="html/headline.html">发头条</a></li>
+			            <li><a href="html/article.html">写文章</a></li>
+			            <li><a href="html/note.html">记笔记</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">草稿箱</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown found hidden-lg">
+			          <a href="#" class="dropdown-toggle fa fa-plus" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="html/question.html">提问题</a></li>
+			            <li><a href="html/headline.html">发头条</a></li>
+			            <li><a href="html/article.html">写文章</a></li>
+			            <li><a href="html/note.html">记笔记</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">草稿箱</a></li>
+			          </ul>
+			        </li>
+			        <li class="index-msg-li">
+			        	<a href="#" class="fa fa-bell-o hidden-sm hidden-xs"></a>
+			        	<div class="index-msg clearfix">
+			        		<div class="msg-header">
+			        			<ul class="clearfix">
+			        				<li class="active"><a href="#"><i class="fa fa-bullhorn"></i></a></li>
+			        				<li><a href="#"><i class="fa fa-commenting-o"></i></a></li>
+			        				<li><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+			        				<li><a href="#"><i class="fa fa-user-plus"></i></a></li>
+			        			</ul>
+			        		</div>
+			        		<div class="msg-body"></div>
+			        		<div class="msg-footer">
+			        			<span>查看全部 >> </span>
+			        		</div>
+			        	</div>
+			        </li>
+			        <li class="index-private-li"> 
+			        	<a href="#" class="fa fa-envelope-o hidden-sm hidden-xs"></a>
+			        	<div class="index-private clearfix">
+			        		<div class="msg-header">
+			        			<span>最近的私信</span>
+			        		</div>
+			        		<div class="msg-body">
+			        			<p>没有人给你发私信</p>
+			        		</div>
+			        		<div class="msg-footer">
+			        			<span>查看全部 >> </span>
+			        		</div>
+			        	</div>
+			        </li>
+			        <li class="me">
+			        	<a href="#" class="user"><img src="images/user-64.png" alt="头像"></a>
+			        	<div class="user-info">
+			        		<div class="info-score clearfix">
+			        			<span>1 声望</span>
+			        			<div class="clearfix">
+			        				<span><b></b>0</span>
+			        				<span><b></b>1</span>
+			        				<span><b></b>2</span>
+			        			</div>
+			        		</div>
+			        		<hr>
+			        		<div class="info">
+			        			<ul class="clearfix">
+			        				<li><a href="#">我的笔记</a></li>
+			        				<li><a href="#">我的主页</a></li>
+			        				<li><a href="#">我的收藏</a></li>
+			        				<li><a href="#">我的档案</a></li>
+			        				<li><a href="#">受邀回答</a></li>
+			        				<li><a href="#">我的资产</a></li>
+			        				<li><a href="#">付费问答</a></li>
+			        				<li><a href="html/personal.html">个人设置</a></li>
+			        				<li><a href="#">退出</a></li>
+			        			</ul>
+			        		</div>
+			        		<hr>
+			        		<div class="info-footer">
+			        			<a href="#">用户申诉</a> · 
+			        			<a href="#">建议反馈</a> · 
+			        			<a href="#">邀请朋友</a>
+			        		</div>
+			        	</div>
+			        </li>
+	      		</ul>
+	    	</div>
+	    </div>
+	</nav>
+	<!-- iPad phone版 底部导航条 -->
+	<nav class="phone-nav hidden-md hidden-lg">
+		<ul>
+			<li class="active">
+				<a href="index.hmtl"><i class="fa fa-home"></i><span>首页</span></a>
+			</li>
+			<li>
+				<a href="html/Question-and-answer.html"><i class="fa fa-comments"></i><span>问答</span></a>
+			</li>
+			<li><a href="html/special.html"><i class="fa fa-pencil-square"></i><span>专栏</span></a></li>
+			<li><a href="html/lecture.html"><i class="fa fa-play-circle"></i><span>讲堂</span></a></li>
+			<li class="phone-nav-dropdown">
+				<a href="#"><i class="fa fa-bars"></i><span>更多</span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">职位</a></li>
+					<li><a href="html/activity.html">活动</a></li>
+					<li><a href="#">标签</a></li>
+					<li><a href="#">徽章</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div class="container clearfix" id="index-con">
+		<div class="row">
+			<div class="left-con col-lg-2 col-md-2">
+				<ul class="clearfix hidden-sm hidden-xs">
+				    <li><a href="#"><i class="fa fa-newspaper-o"></i><span>我的订阅</span></a></li>
+				    <li><a href="#"><i class="fa fa-thumbs-o-up"></i><span>近期热门</span></a></li>
+				    <li><a href="#"><i class="fa fa-globe"></i><span>最新内容</span></a></li>
+				    <li><span>技术频道</span></li>
+				    <li><a href="#"><i></i><span>前端</span></a></li>
+				    <li><a href="#"><i></i><span>后端</span></a></li>
+				    <li><a href="#"><i></i><span>区块链</span></a></li>
+				    <li><a href="#"><i></i><span>人工智能</span></a></li>
+				    <li><a href="#"><i></i><span>Android</span></a></li>
+				    <li><a href="#"><i></i><span>iOS</span></a></li>
+				    <li><a href="#"><i></i><span>工具</span></a></li>
+				    <li><a href="#"><i></i><span>安全</span></a></li>
+				    <li><a href="#"><i></i><span>程序员</span></a></li>
+				    <li><a href="#"><i></i><span>行业</span></a></li>
+				    <li><a href="#"><i class="fa fa-tags"></i><span>更多标签</span></a></li>            
+				</ul>
+				<ul class="clearfix visible-sm visible-xs">
+				    <li><a href="#"><i class="fa fa-newspaper-o"></i><span>我的订阅</span></a></li>
+				    <li><a href="#"><i class="fa fa-thumbs-o-up"></i><span>近期热门</span></a></li>
+				    <li><a href="#"><i class="fa fa-globe"></i><span>最新内容</span></a></li>
+				    <li class="visible-xs"><a href="#"><i class="fa fa-server"></i><span>技术频道</span></a></li>
+				</ul>
+			</div>
+			<div class="col-lg-7 col-md-7 center-con">
+				<!-- 轮播图 -->
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- dot -->
+					<ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					</ol>
+					  <!-- Wrapper-->
+					<div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					        <img src="images/index-wrap1.png" alt="...">
+					        <div class="carousel-caption">
+					        	<h3>160 行代码仿 Vue 实现极简双向绑定</h3>
+					        	<h5>附详细注释~</h5>
+					        </div>
+					    </div>
+					    <div class="item">
+					        <img src="images/index-wrap2.png" alt="...">
+					        <div class="carousel-caption">
+						      	<h3>RESETful API 设计规范</h3>
+						      	<h5></h5>
+					        </div>
+					    </div>
+					    <div class="item">
+					        <img src="images/index-wrap3.png" alt="...">
+					        <div class="carousel-caption">
+						      	<h3>了解一些额外知识，让前端开发锦上添花</h3>
+						      	<h5></h5>
+					        </div>
+					    </div>
+					    <div class="item"> 
+					        <img src="images/index-wrap4.png" alt="...">
+					        <div class="carousel-caption">
+						      	<h3>React 性能优化</h3>
+						      	<h5>虚拟 Dom 原理浅析</h5>
+					        </div>
+					    </div>
+
+					  </div>
+					<div class="mask"></div>
+				</div>
+				<!-- 内容 -->
+				<div class="con-msg">
+					<div class="con-title">
+						<span>我的订阅</span><span>只看推荐</span>
+						<button class="btn btn-xs btn-default hidden-xs hidden-sm">推送配置</button>
+					</div>
+					<div class="con">
+						<p class="autor">来自作者 SegmentFault</p>
+						<div class="clearfix">
+							<img src="images/index-con1.jpg" alt="">
+							<h4>聚焦区块链应用，SegmentFault 黑客马拉松引爆珠三角</h4>
+							<p class="text">6月23日，SegmentFault 思否在广州未来社举办黑客马拉松，聚焦区块链应用 DApp 开发。活动吸引了来自珠三角的极客参与，现场也来自硅谷和多伦多、上海等地区的团队参与。本次活动嘉宾有 CyberVein 中国区发起人</p>
+						</div>
+						<span class="like">
+							<i class="fa fa-thumbs-up "></i>
+							<span class="num">10</span>
+						</span> · 
+						<span>赞</span>
+						<span class="date"><a href="#">SegmentFault</a> · 6月26日</span>						
+					</div>
+					<div class="con">
+						<p class="autor">来自作者 SegmentFault</p>
+						<div class="clearfix">
+							<img src="images/index-con1.jpg" alt="">
+							<h4>极客广州——EOS Asia郭达峰担任SegmentFault思否黑客马拉松技术顾问</h4>
+							<p class="text">近日备受关注的 EOS 投票率超过 15%，主网激活，已正式上线。EOS Asia 联合创始人郭达峰将担任SegmentFault思否区块链黑客马拉松广州站技术顾问，为大赛项目提供技术咨询支持。届时，CyberVein 创始人余家伟</p>
+						</div>
+						<span class="like">
+							<i class="fa fa-thumbs-up "></i>
+							<span class="num">4</span>
+						</span> · 
+						<span>赞</span>
+						<span class="date"><a href="#">SegmentFault</a> · 6月20日</span>						
+					</div>
+					<div class="con">
+						<p class="autor">来自作者 SegmentFault</p>
+						<div class="clearfix">
+							<img src="images/index-con1.jpg" alt="">
+							<h4>区块链游戏 Dapp 获得思否黑客马拉松北京站冠军</h4>
+							<p class="text">上周末，来自硅谷团队的游戏作品“Crypto Bird - An Implement of NabBoard”获得 SegmentFault 思否区块链黑客马拉松北京站冠军。本次黑客马拉松有来自 QuarkChain基金会科学家杨耀东、IMO.VC 合伙人刘海、BCH 核</p>
+						</div>
+						<span class="like">
+							<i class="fa fa-thumbs-up "></i>
+							<span class="num">10</span>
+						</span> · 
+						<span>赞</span>
+						<span class="date"><a href="#">SegmentFault</a> · 6月26日</span>						
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 右侧 -->
+			<div class="right-con col-lg-3 col-md-3">
+				<!-- 广告图片 -->
+				<div class="aq_advantage hidden-xs hidden-sm">
+					<div class="aq_adv_pic">
+						<img src="images/advantage.png" alt="">
+						<a href="#"><h6 class="text-center"><small>想在上方展示你的广告？</small></h6></a>
+					</div>
+				</div>
+				<!-- 广告轮播 -->
+				<div class="aq_adv_carousel">
+					<h4><a href="">讲座推荐</a></h4>
+					<span class="aq_small_pre glyphicon glyphicon-chevron-left"></span>
+					<span class="aq_small_next glyphicon glyphicon-chevron-right"></span>
+					<div class="aq_small_carousel">
+						<div class="aq_small_item">
+							<img src="images/adv_c3.jpg" alt="">
+							<a>深度解析HTTPS数据传输加密原理</a>
+							<div class="aq_small_star">
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="aq_small_pf">4.8</span>
+								<span class="aq_small_peolpe">(36人已经报名)</span>
+							</div>
+							<div class="aq_small_money">
+								<h5><small>￥36.00</small></h5>
+							</div>
+						</div>
+						<div class="aq_small_item">
+							<img src="images/adv_c1.png" alt="">
+							<a>深度解析HTTPS数据传输加密原理</a>
+							<div class="aq_small_star">
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="aq_small_pf">4.8</span>
+								<span class="aq_small_peolpe">(36人已经报名)</span>
+							</div>
+							<div class="aq_small_money">
+								<h5><small>￥36.00</small></h5>
+							</div>
+						</div>
+						<div class="aq_small_item">
+							<img src="images/adv_c2.jpg" alt="">
+							<a>深度解析HTTPS数据传输加密原理</a>
+							<div class="aq_small_star">
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="aq_small_pf">4.8</span>
+								<span class="aq_small_peolpe">(36人已经报名)</span>
+							</div>
+							<div class="aq_small_money">
+								<h5><small>￥36.00</small></h5>
+							</div>
+						</div>
+						<div class="aq_small_item">
+							<img src="images/adv_c3.jpg" alt="">
+							<a>深度解析HTTPS数据传输加密原理</a>
+							<div class="aq_small_star">
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="aq_small_pf">4.8</span>
+								<span class="aq_small_peolpe">(36人已经报名)</span>
+							</div>
+							<div class="aq_small_money">
+								<h5><small>￥36.00</small></h5>
+							</div>
+						</div>
+						<div class="aq_small_item">
+							<img src="images/adv_c1.png" alt="">
+							<a>深度解析HTTPS数据传输加密原理</a>
+							<div class="aq_small_star">
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="aq_small_pf">4.8</span>
+								<span class="aq_small_peolpe">(36人已经报名)</span>
+							</div>
+							<div class="aq_small_money">
+								<h5><small>￥36.00</small></h5>
+							</div>
+						</div>
+						<div class="aq_small_item">
+							<img src="images/adv_c2.jpg" alt="">
+							<a>深度解析HTTPS数据传输加密原理</a>
+							<div class="aq_small_star">
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="aq_small_pf">4.8</span>
+								<span class="aq_small_peolpe">(36人已经报名)</span>
+							</div>
+							<div class="aq_small_money">
+								<h5><small>￥36.00</small></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 活动列表 -->
+				<div class="index_active">
+					<div class="active_more clearfix">
+						<h5>活动推荐</h5>
+						<a href="#"><span>更多</span></a>
+					</div>
+					<div class="active_con clearfix">
+						<div class="active_date">
+							<span>JUL</span>
+							<span>06</span>
+						</div>
+						<div class="active_title">
+							<a href="#">
+				        		<p>2018首届“顶天立地”iFLYTEK AI开发者大赛</p>
+				        	</a>
+				        	<span>合肥 · </span>
+				        	<span>07-11 周三 · </span>
+				        	<span class="orange">报名中</span>
+						</div>
+					</div>
+					<div class="active_con clearfix">
+						<div class="active_date">
+							<span>JUL</span>
+							<span>11</span>
+						</div>
+						<div class="active_title">
+							<a href="#">
+				        		<p>2018首届“顶天立地”iFLYTEK AI开发者大赛</p>
+				        	</a>
+				        	<span>合肥 · </span>
+				        	<span>07-11 周三 · </span>
+				        	<span class="orange">报名中</span>
+						</div>
+					</div>
+					<div class="active_con clearfix">
+						<div class="active_date">
+							<span>JUL</span>
+							<span>06</span>
+						</div>
+						<div class="active_title">
+							<a href="#">
+				        		<p>DAMS中国数据资产管理峰会</p>
+				        	</a>
+				        	<span>上海 · </span>
+				        	<span>07-05 周五 · </span>
+				        	<span class="orange">报名中</span>
+						</div>
+					</div>
+					<div class="active_con clearfix">
+						<div class="active_date">
+							<span>JUL</span>
+							<span>06</span>
+						</div>
+						<div class="active_title">
+							<a href="#">
+				        		<p>2018年迅雷全球区块链应用大赛</p>
+				        	</a>
+				        	<span>上海 · </span>
+				        	<span>07-05 周五 · </span>
+				        	<span class="orange">报名中</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<!-- footer_con -->
+			<div class="footer_con">
+				<div class="col-md-2 f_con">
+					<h4>产品</h4>
+					<ul class="f_ul">
+						<li>热门回答</li>
+						<li>热门专栏</li>
+						<li>热门讲堂</li>
+						<li>最新活动</li>
+						<li>圈子</li>
+						<li>找工作</li>
+						<li>移动客户端</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>资源</h4>
+					<ul class="f_ul">
+						<li>每周精选</li>
+						<li>用户排行榜</li>
+						<li>徽章</li>
+						<li>帮助中心</li>
+						<li>声望与权限</li>
+						<li>社区服务中心</li>
+						<li>开发手册</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>商务</h4>
+					<ul class="f_ul">
+						<li>人才服务</li>
+						<li>企业培训</li>
+						<li>活动策划</li>
+						<li>广告投放</li>
+						<li>区块链解决方案</li>
+						<li>合作联系</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>关于</h4>
+					<ul class="f_ul">
+						<li><a href="html/about_us.html" target="_blank" style="color: #888;">关于我们</a></li>
+						<li>加入我们</li>
+						<li>联系我们</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>关注</h4>
+					<ul class="f_ul">
+						<li>产品技术日志</li>
+						<li>社区运营日志</li>
+						<li>市场运营日志</li>
+						<li>团队日志</li>
+						<li>社区访谈</li>
+						<li class="share">
+							<i href="#" class="iconfont icon-wechat share_1">
+								<div class="share_pic">
+									<img src="images/appQrcode.png" alt="">
+									<p>关注微信号</p>
+									<span></span>
+								</div>
+							</i>
+							<i href="#" class="iconfont icon-weibo share_2"></i>
+							<i href="#" class="iconfont icon-github share_3"></i>
+							<i href="#" class="iconfont icon-twitter share_4"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>条款</h4>
+					<ul class="f_ul">
+						<li>服务条款</li>
+						<li>内容许可</li>
+						<li class="app"><img src="images/appQrcode.png" alt="" class="sf"></li>
+						<li>扫一扫下载APP</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 版权 copyright -->
+			<div class="copyright">
+				<p>Copyright © 2011-2018 SegmentFault. 当前呈现版本 17.06.16</p>
+				<p>
+					<a href="#" onclick="return false">浙ICP备 15005796号-2&nbsp;</a>
+					<a href="#" onclick="return false"> 浙公网安备 33010602002000号&nbsp;</a>
+					杭州堆栈科技有限公司版权所有
+				</p>
+				<p class="sponsor">
+					CDN 存储服务由
+					<a href="#" onclick="return false">又拍云</a>
+					赞助提供
+				</p>
+			</div>
+		</div>
+	</footer>	
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/nav.js"></script>
+
+</html>

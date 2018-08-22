@@ -1,0 +1,381 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.activity_isc .container{
+	padding-left: 0px;
+}
+.activity_isc .title{
+	width: 100%;
+	height: 50px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.activity_isc .title div{
+	width: 30px;	
+	height: 30px;
+	line-height: 30px;	
+	font-size: 16px;
+	float: left;
+	text-align: center;
+	margin-top: 9px;
+	margin-right: 15px;
+	border: 1px solid #1aa471;
+	border-radius: 50%;
+	color: #1aa471;
+}
+.activity_isc .title h1{
+	height: 50px;	
+	line-height: 50px;
+	font-size: 24px;
+	color: #333333;
+	display: block;
+	font-weight: bold;	
+	cursor: pointer;
+}
+/* 大会信息：时间 地点 主办方  */
+/* 图片 pic */
+.activity_isc .col-md-6{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.activity_isc .pic img{
+	width: 100%;
+	height: 248px;
+}
+/* 信息 infos */
+.activity_isc .time{
+	padding-left: 0px;
+	padding-right: 0px;
+	background: #f3f3f3;
+	height: 248px;
+}
+.activity_isc .infos{
+	margin: 20px 30px;
+}
+/* 信息 表格 table */
+.activity_isc .infos table tr{
+	height: 30px;
+	font-size: 14px;
+}
+.activity_isc .infos table th{
+	font-weight: normal;
+	color: #666666;
+}
+.activity_isc .infos table a{
+	color: #009a61;
+}
+.activity_isc .infos table a:hover{
+	color: #004e31;
+}
+/* 信息 报名 enter */
+.activity_isc .infos .enter{
+	height: 50px;
+	margin-top: 20px;
+}
+.activity_isc .infos .enter button{
+	padding: 8px 15px;
+	color: #777777;
+	background: white;
+	font-size: 18px;
+	border: 1px solid #dadada;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.activity_isc .infos .enter span{
+	font-size: 14px;
+	color: #666666;
+}
+/* 地图 位置 */
+.activity_isc .col-md-2{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.activity_isc .place img{
+	width: 100%;
+	height: 248px;
+}
+
+/* 大会内容 */
+.activity_isc .content{
+	font-size: 14px;
+	line-height: 25px;
+	color: #333333;
+	margin-top: 30px;
+}
+/* 内容 p */
+.activity_isc .col-md-8{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 30px;
+}
+.activity_isc .content p a{
+	color: #009a61;
+	border-bottom: 1px solid #c0e6d8;
+}
+.activity_isc .content p a:hover{
+	color: #004e31;
+	border-bottom: 1px solid #009a61; 
+}
+.activity_isc .content hr{
+	height: 2px;
+	background: #cccccc;
+	margin: 30px 0px;
+}
+/* 评论 comment*/
+.activity_isc .comment{
+	height: 30px;
+	margin-bottom: 10px;
+}
+.activity_isc .comment .com{
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 20px;
+	float: left;
+}
+/* 默认排序 sort*/
+.activity_isc .comment .sort{
+	font-size: 12px;
+	width: 100px;
+	float: left;
+	position: relative;
+	display: block;
+}
+.activity_isc .comment .sort a{
+	color: #009a61;
+}
+.activity_isc .comment .sort a:hover{
+	color: #004e31;
+}
+.activity_isc .comment .sort .option{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-top: 4px solid;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+/* 排序选择 sorts */
+.activity_isc .comment .sort .sorts{
+	width: 152px;
+	background: white;
+	border: 1px solid #d6d6d6;
+	border-bottom: 2px solid #d6d6d6;
+	border-radius: 5px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-left: -15px;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+.activity_isc .comment .sort .sorts li{
+	font-size: 12px;
+	width: 150px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #333333;
+	cursor: pointer;
+}
+/* 评论内容 */
+.activity_isc .content .comment_con{
+	width: 100%;
+	height: 180px;
+	background: #fafafa;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+}
+.activity_isc .content .comment_con .comment_cons{
+	width: 100%;
+	padding:20px;
+}
+/* 头像 */
+.activity_isc .content .comment_con .comment_cons img{
+	width: 5%;
+	height: 32px;
+	border-radius: 50%;
+	float: left;
+}
+/* 评论框 */
+.activity_isc .content .comment_con .comment_cons .coms{
+	width: 90%;
+	height: 150px;
+	margin-left: 15px;
+	float: left;
+	position: relative;
+}
+.activity_isc .content .comment_con .comment_cons .coms .texts{
+	width: 100%;
+	float: left;
+	border-radius: 5px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+/* 发布评论 */
+.activity_isc .content .comment_con .comment_cons .coms .btn button{
+	font-size: 14px;
+	color: white;
+	padding: 5px 10px;
+	border: 1px solid #008151;
+	border-radius: 5px;
+	background: #009a61;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.activity_isc .content .comment_con .comment_cons .btn button:hover{
+	background: #006741;
+}
+/* 活动组织者 */
+.activity_isc .orga{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.activity_isc .organize{
+	height: 250px;
+	border-top: 1px solid #eeeeee;
+	/* margin-top: 30px; */
+}
+.activity_isc .organize .organizer{
+	height: 80px;
+	margin-top: 35px;
+}
+.activity_isc .organize .organizer p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.activity_isc .organize .organizer span{
+	font-size: 14px;
+}
+.activity_isc .organize .organizer span a{
+	color: #579a79; 
+}
+.activity_isc .organize .organizer span a:hover{
+	color: #004e31; 
+}
+/* 分享到  */
+.activity_isc .organize .share ul li{
+	height: 30px;
+	float: left;
+	margin-right: 15px;
+	position: relative;
+}
+.activity_isc .organize .share ul li .share_1,.share_2,.share_3,.share_4{
+	font-size: 16px;
+}
+.activity_isc .organize .share ul li .share_1{
+	color: #ec0117;
+}
+.activity_isc .organize .share ul li .share_2{
+	color: #00b500;
+}
+.activity_isc .organize .share ul li .share_3{
+	color: #4baaf4;
+}
+.activity_isc .organize .share ul li .share_4{
+	color: #4862a3;
+}
+.activity_isc .organize .share ul li strong{
+	font-size: 26px;
+	line-height: 15px;
+	color: #9a9a9a;
+	cursor: pointer;
+}
+.activity_isc .organize .share ul li strong:hover{
+	opacity: 0.8;
+}
+/* 鼠标移到分享图标时显示的内容 */
+/* 分享框的样式 */
+.activity_isc .organize .share ul li .text{
+	background: #1a1a1a;
+	color: #f0eaea;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 5px;
+	padding: 3px 8px;
+}
+/* 下三角符 */
+.activity_isc .organize .share ul li .hover{
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: #1a1a1a;
+	transform: rotate(45deg);
+	margin: -5px auto;
+}
+/* 分享框的大小 */
+.activity_isc .organize .share .shares_1,.shares_2,.shares_3,.shares_4{
+	display: none;
+	height: 20px;
+}
+.activity_isc .organize .share .shares_1{
+	width: 100px;
+}
+.activity_isc .organize .share .shares_2{
+	width: 80px;
+}
+.activity_isc .organize .share .shares_3{
+	width: 90px;
+}
+.activity_isc .organize .share .shares_4{
+	width: 110px;
+}
+/* 分享框的位置 */
+.activity_isc .organize .share ul li .shares_1,.shares_2,.shares_3,.shares_4{
+	top: -30px;
+	position: absolute;
+	z-index: 1;
+}
+.activity_isc .organize .share ul li .shares_1{
+	left: -40px;
+}
+.activity_isc .organize .share ul li .shares_2{
+	left: -30px;
+}
+.activity_isc .organize .share ul li .shares_3{
+	left: -34px;
+}
+.activity_isc .organize .share ul li .shares_4{
+	left: -43px;
+}
+/* 媒体查询 */
+@media (min-width: 991px){
+	.activity_isc .orga{
+		padding-left: 30px;
+	}
+	footer .f_con{
+		padding-left: 0px;
+	}
+}
+@media (max-width: 990px) {
+	.activity_isc .container {
+	    padding-left: 15px;
+	}
+	.activity_isc .pic img{
+		height: 400px;
+	}
+	.col-md-2{
+		display: none;
+	}
+	.col-md-8{
+		width: 100%;
+	}
+	footer .f_con{
+		display: block;
+	}
+	.orga{
+		width: 100%;
+	}
+	.activity_isc .organize{
+		margin-bottom: -50px;
+	}
+}
+

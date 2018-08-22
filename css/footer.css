@@ -1,0 +1,138 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+body{
+	font-family: -apple-system,"Helvetica Neue",
+	Helvetica,Arial,"PingFang SC","Hiragino Sans GB",
+	"WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+}
+footer{
+	border-top: 1px solid #eeeeee;
+}
+footer .container{
+	margin-top: 35px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+footer .footer_con{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+footer .f_con h4{
+	width: 100%;
+	color: #333333;
+	font-size: 14px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	float: left;
+}
+footer .f_con .f_ul li{
+	color: #888888;
+	font-size: 13px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+footer .f_con .f_ul li:hover{
+	text-decoration: underline;
+}
+/* 分享 */
+footer .f_con .f_ul li i{
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+footer .f_con .f_ul li i.share_1{
+	color: #00b500;
+	position: relative;
+}
+footer .f_con .f_ul li i.share_2{
+	color: #ec0117;
+}
+footer .f_con .f_ul li i.share_4{
+	color: #4baaf4;
+}
+/* 微信二维码 */
+footer .f_con .f_ul li i.share_1 .share_pic{
+	width: 110px;
+	height: 120px;
+	border: 1px solid #b4b4b4;
+	border-radius: 5px;
+	padding: 10px 10px 25px 10px;
+	background: white;
+	box-shadow: 0px 5px 3px #d1d1d1;
+	position: absolute;
+	bottom: 28px;
+	left: -50px;
+	text-align: center;
+	display: none;
+}
+footer .f_con .f_ul li i.share_1 .share_pic img{
+	height: 100%;
+}
+footer .f_con .f_ul li i.share_1 .share_pic p{
+	color: #888888;
+	font-size: 13px;
+	text-align: center;
+}
+footer .f_con .f_ul li i.share_1 .share_pic span{
+	content: '';
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-right: 1px solid #b4b4b4;
+	border-bottom: 1px solid #b4b4b4;
+	transform: rotate(45deg);
+	position: absolute;
+	z-index: 1;
+	left: 51px;
+	bottom: -6px;
+}
+/* 鼠标移入小图标 透明度 */
+footer .f_con .f_ul li i:hover{
+	opacity: 0.7;
+}
+footer .f_con .f_ul li .share_1:hover{
+	opacity: 1;
+}
+footer .f_con .f_ul li .share_1:hover .share_pic{
+	display: block;
+}
+/* 扫一扫下载APP */
+footer .f_con .f_ul li.app img{
+	width: 65px;
+	height: 65px;
+}
+/* 媒体查询 */
+@media (max-width: 992px) {
+	footer{
+		margin-top: 30px;
+	}
+	footer .f_con{
+		width: 16.666667%;
+		padding-right: 0px;
+		float: left;
+	}
+}
+@media (max-width: 768px) {
+	footer .footer_con{
+		display: none;
+	}
+}
+
+/* 版权 */
+footer .copyright p{
+	text-align: center;
+	font-size: 13px;
+	color: #888888;
+	margin-bottom: 0px;
+}
+footer .copyright p a{
+	color: #888888;
+}
+footer .copyright .sponsor{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}

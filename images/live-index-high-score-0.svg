@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-40.3901571%" id="linearGradient-1">
+            <stop stop-color="#91E4A3" offset="0%"></stop>
+            <stop stop-color="#DBFE74" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="专题讲座" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="讲堂首页" transform="translate(-388.000000, -1092.000000)">
+            <g id="Group-10" transform="translate(388.000000, 1092.000000)">
+                <rect id="Rectangle-2" fill-opacity="0.600000024" fill="url(#linearGradient-1)" x="0" y="4" width="26" height="16" rx="2"></rect>
+                <rect id="Rectangle-2" fill="url(#linearGradient-1)" x="4" y="0" width="18" height="20" rx="2"></rect>
+                <g id="赞-(1)" transform="translate(8.000000, 5.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                    <path d="M10.1965859,4.40611153 L6.9999372,4.40611153 C8.23848941,0.214168153 6.14636704,0 6.14636704,0 C5.25937208,0 5.44347864,0.642562007 5.37650339,0.749634574 C5.37650339,2.79967773 3,4.40611153 3,4.40611153 L3,10.2197502 C3,10.7934166 3.85348222,11 4.18823286,11 L8.99158413,11 C9.4434912,11 9.81164153,9.91371353 9.81164153,9.91371353 C11,6.21141739 11,5.10991541 11,5.10991541 C11,4.34497324 10.1965734,4.40612304 10.1965734,4.40612304 L10.1965734,4.40612304 L10.1965859,4.40611153 Z" id="Shape"></path>
+                    <path d="M1.65284715,4.0000019 L0.286676028,4.0000019 C0.00445550022,4.0000019 0,4.37776809 0,4.37776809 L0.282220528,10.6039743 C0.282220528,11 0.573352057,11 0.573352057,11 L1.7558705,11 C2.00223187,11 1.99999964,10.7380239 1.99999964,10.7380239 L1.99999964,4.47213325 C1.99999964,3.99392762 1.65285611,4.0000019 1.65285611,4.0000019 L1.65285611,4.0000019 L1.65284715,4.0000019 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

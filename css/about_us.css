@@ -1,0 +1,426 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+/* 导航条 */
+.about_us{
+	height: 500px;
+}
+.about_us .navbar-default{
+	background: none;
+}
+.about_us .container-fluid .collapse {
+	background: none;
+}
+.about_us .navbar {
+	border: none;
+}
+/* 背景图片 */
+.about_us .bg_pic{
+	width: 100%;
+	height: 500px;
+	position: absolute;
+}
+/* logo */
+.about_us .navbar-header img{
+	height: 40px;
+	margin-top: 10px;
+}
+/* 导航条内容样式 */
+.about_us .navbar-right a{
+	font-size: 14px;
+	padding: 20px 15px;
+	font-weight: bold;
+}
+.about_us .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.about_us nav>li>a:hover {
+    color: white;
+}
+.about_us .navbar.navbar-default{
+	 margin-bottom: 0px;
+}
+.about_us .navbar.navbar-top{
+	width: 100%;
+	min-height: 60px;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: relative;
+    z-index: 1;
+
+}
+/* 缩小时右边box颜色 */
+.about_us .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+/* 边框颜色 */
+.about_us .navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+/* 鼠标经过无变化 */
+.about_us .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.about_us .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #275844;
+}
+/* logo_text */
+.logo_text{
+	position: absolute;
+	width: 100%;
+	top: 30%;
+}
+.logo_text .container h2{
+	font-size: 16px;
+}
+.logo_text .container h1{
+	font-size: 36px;
+	padding: 0px 80px;
+	box-sizing: border-box;
+}
+.logo_text .container h2,h1{
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+@media (min-width: 768px){
+	.about_us .navbar.navbar-top {
+	    background-color: transparent;
+	}
+}
+/* 各部分的内容 h3 p标签内容text */
+.information,.cultural,.activity,.report,.partner,.resource{
+	margin-top: 40px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.information .info,.cultural .cul,.activity .act,
+.report .rep,.partner .par,.resource .res{
+	width: 590px;
+	margin: 0 auto;
+}
+
+.information h3,.cultural h3,.activity h3,
+.report h3,.partner h3,.resource h3{
+	font-size: 30px;
+	color: #2e3b4e;
+	font-weight: bold;
+}
+.information .text,.cultural .text,.activity .text,
+.report .text,.partner .text,.resource .text{
+	font-size: 14px;
+	color: #5f6a7d;
+	line-height: 22px;
+	display: inline-block;
+	text-align: center;
+}
+@media (max-width: 622px){
+	.information .info{
+		width: 100%;
+	}
+}
+/* 关于 SegmentFault */
+/* col-md-3时间 成员 开发者 位置 */
+.information .info_time,.info_people,.info_developer,.info_position{
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #e8e8e8;
+}
+.information .col-md-3{
+	float: left;
+}
+.information .col-md-3 span{
+	font-size: 65px;
+	color: #009a61;
+}
+.information .col-md-3 h4{
+	font-size: 32px;
+	color: #2e3b4e;
+}
+.information .col-md-3 p{
+	font-size: 14px;
+	color: #5f6a7d;
+}
+@media (max-width: 990px) {
+	.col-sm-6{
+		width: 50%;
+		margin-top: -10px;
+	}
+}
+/*  SegmentFault 的文化  */
+.cultural{
+	background: #f8f9fa;
+	padding-top: 40px;
+}
+.cultural .culs{
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 60px;  
+}
+/* 左内容 */
+.cultural .cul_left img{
+	width: 100%;
+}
+/* 右内容 */
+.cultural .cul_right .cul_right_t{
+	background: #009a61;
+	margin-bottom: 35px;
+}
+.cultural .cul_right .cul_right_t p{
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	display: inline-block;
+	margin: 75px 20px;
+}
+/* 给父级加 clear: both; 可清除子级的浮动 */
+.cultural .cul_right .cul_right_b{
+	clear: both;
+}
+.cultural .cul_right .cul_right_b .pic_left{
+	width: 47%;
+	float: left;
+}
+.cultural .cul_right .cul_right_b .pic_right{
+	width: 47%;
+	float: right;
+}
+/* 媒体查询 */
+/* <=1200px */
+ @media (max-width: 1200px) {
+ 	.cultural .col-xs-12{
+		width: 50%;
+	}
+	.cultural .cul_right .cul_right_t p{
+		margin: 80px 20px;
+		font-size: 16px;
+		font-weight: normal;
+	}
+}
+/* <=991px */
+@media (max-width: 991px){
+	.cultural .col-xs-12{
+		width: 50%;
+	}
+	.cultural .cul_right .cul_right_t p{
+		margin: 40px 20px;
+		font-size: 16px;
+		font-weight: normal;
+	}
+} 
+/* <=768px */
+@media (max-width: 768px) {
+	.cultural .col-xs-12{
+		width: 100%;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.cultural .cul_right .cul_right_t p{
+		font-size: 16px; 
+		margin: 145px 30px;
+		font-weight: normal;
+	}
+} 
+/* <=718px */
+@media (max-width: 718px) {
+	.cultural .col-xs-12{
+		width: 100%;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.cultural .cul_left img{
+		margin-top: 20px;
+	}
+	.cultural .cul_right .cul_right_t p{
+		font-size: 20px; 
+		margin: 35px 30px;
+		font-weight: normal;
+	}
+}
+/* SegmentFault 将黑客马拉松活动引入中国 */
+.activity .act_pic{
+	margin-top: 50px;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.activity .act_pic img{
+	width: 100%;
+	border: 1px solid #127e4f;
+	border-radius: 5px;
+}
+.activity .act_radio{
+	width: 50px;
+	height: 50px;
+	border: 2px solid white;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	left: 50%;
+	margin-left: -25px;
+}
+.activity .act_radio .option{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-left: 15px solid white;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	margin-top: -10px;
+	left: 50%;
+	margin-left: -5px;
+}
+/* ********************** */
+/* 视频播放 */
+.videos{
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: relative;
+	display: none;
+}
+.videos video{
+	width: 100%;
+	height: 100%;
+}
+.videos span{
+	width: 15px;
+	height: 25px;
+	color: white;
+	font-size: 20px;
+	display: inline-block;
+	top: 35px;
+	right: 30px;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+}
+/* 点击act_pic，videos添加该样式 */
+.videos-after{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 5;
+}
+/* ******************** */
+/* 媒体报道 */
+.report{
+	background: #f8f9fa;
+	padding-bottom: 30px;
+}
+.report .rep{
+	margin: 50px auto;
+}
+.report .rep_con{
+	background: white;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	padding: 60px 30px;
+	margin-bottom: 30px;
+	color: #2e3b4e;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.report .rep_con:hover{
+	border: 2px solid #009a61;
+	box-sizing: border-box;
+	padding: 59px 29px;
+}
+.report .rep_con p.rep_title{
+	font-size: 24px;
+}
+.report .rep_con p.rep_resource{
+	font-size: 12px;
+	font-weight: bold;
+}
+/*  */
+@media (max-width: 990px) {
+	.report .cons{
+		width: 33.333%;
+	}
+}
+@media (max-width: 768px) {
+	.report .cons{
+		width: 100%;		
+	}
+	.report .rep_con p.rep_title{
+		font-size: 20px;
+	}
+}
+/* 合作伙伴 */
+.partner .par{
+	margin-bottom: 30px;
+}
+.partner .par_logo img{
+	width: 100%;
+}
+/* 资源信息 */
+.resource{
+	background: #f8f9fa;
+	margin-bottom: 0px;
+	padding-bottom: 60px;
+}
+.resource .res{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.resource .res_con{
+	padding: 30px 15px;
+	background: white;
+	border: 1px solid #e8e8e8;
+	cursor: pointer;
+}
+.resource .res_con:hover{
+	border: 2px solid #009a61;
+	box-sizing: border-box;
+	padding: 29px 14px;
+}
+/* 资源信息内容span h4 p a样式 */
+.resource .res_con span{
+	font-size: 65px;
+	color: #009a61;
+}
+.resource .res_con h4{
+	font-size: 28px;
+	color: #2e3b4e;
+	font-weight: bold;
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+.resource .res_con p{
+	font-size: 14px;
+	color: #5f6a7d;
+}
+.resource .res_con a{
+	color: #009a61;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 10px;
+}
+.resource .res_con a:hover{
+	color: #004e31;
+	text-decoration: none;
+}
+/* 版权 */
+.copyright{
+	background: #343a40;
+	text-align: center;
+	color: #6c7980;
+	font-size: 14px;
+}
+.copyright .copyright_con{
+	padding-top: 55px;
+	padding-bottom: 55px;
+	line-height: 10px;
+}
+.copyright .copyright_con b{
+	font-weight: bold;
+	cursor: pointer;
+}

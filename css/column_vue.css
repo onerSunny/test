@@ -1,0 +1,354 @@
+/*
+* @Author: Administrator
+* @Date:   2018-06-23 14:34:21
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-07-01 22:02:46
+*/
+body{
+    font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+}
+/* 当前位置 */
+.col_title{
+	padding: 20px 0;
+}
+.col_title a{
+	color: #009a61;
+}
+.col_title a:hover{
+    color: #004e31;
+    text-decoration: underline;
+}
+.col_title_active{
+	color: #777;
+}
+.col_title li{
+	position: relative;
+	font-size: 1.3rem;
+}
+.col_title .col_title_active::after{
+	position: absolute;
+	left: -5px;
+	content: '/';
+	color: #777;
+}
+/* 课程图片和价钱 */
+.col_main .container{
+	padding: 15px 15px;
+    background: #F5F5F5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.col_main .container .row{
+	margin: 0px;
+}
+.col_main .vue_pic{
+	background: black;
+	text-align: center;
+}
+.col_main .vue_pic img{
+    display: inline-block;
+	width: 100%;
+}
+.col_main h3{
+	font-size: 2.8rem;
+	font-weight: bold;
+}
+.col_main P{
+    font-size: 1.4rem;
+    color: #333;
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 5px;
+}
+.col_main P:hover{
+	 -webkit-line-clamp: 3;
+}
+.col_star span{
+	font-size: 1.8rem;
+	color: #F6A623;
+}
+.col_star span.col_star_font{
+	display: inline-block;
+	padding-left: 5px;
+	color: #F6A623;
+	font-size: 1.6rem;
+}
+.col_star .col_people,.col_include{
+	color: #999;
+	font-size: 1.3rem;
+}
+.col_include{
+	display: block;
+	margin: 10px auto;
+}
+span.money{
+	color: #ED1C24;
+    font-size: 2.4rem;
+}
+.col_main del{
+	color: #999;
+	display: inline-block;
+	margin-left: 10px;
+}
+.col_buy{
+	margin-top: 10px;
+}
+.col_buy button{
+	color: #fff;
+    background-color: #009a61;
+    border-color: #008151;
+}
+.col_buy button:hover{
+	background: #006741;
+	color: white;
+}
+.col-share span{
+	color: #999;
+	display: inline-block;
+	margin-right: 15px;
+}
+.col-share span a{
+	color: #999;
+}
+.col-share span a:hover{
+	text-decoration: underline;
+}
+.col-list{
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.col_describe{
+	margin-top: 10px;
+}
+/* .col_describe .col-md-8{
+	padding: 0px;
+	margin: 0px;
+} */
+.col-list .col_list_title{
+	font-size: 2rem;
+	font-weight: 700;
+}
+.col_inner_list{
+	margin-top: 20px;
+}
+.col_describe .col_try{
+    float: right;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #009a61;
+    margin-right: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.col_describe .col_inner_list .panel-title:hover{
+	color: #009a61;
+}
+.col_describe .col_inner_list i{
+    font-size: 1.6rem;
+    color: #DB524B;
+    display: inline-block;
+    margin-right: 5px;
+}
+.col_pj_count .col-num_title h4{
+	color: black;
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+.media-object{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+.media-heading a{
+	color: #009a61;
+	font-size: 1.6rem;
+}
+.media-heading .col_data{
+	display: inline-block;
+	margin-left: 10px;
+    color: #999;
+    font-size: 1.3rem;
+}
+.col_pj_star{
+	display: inline-block;
+	margin-left: 5px;
+}
+.media-heading i{
+	display: inline-block;
+	margin-top: 3px;
+	font-size: 1.4rem;
+    color: #F6A623;	
+}
+.col_pj_content{
+	font-size: 1.4rem;
+	color: #333;
+	margin: 10px auto;
+}
+.col_pj_zan{
+	cursor: pointer;
+    color: #999;
+    font-size: 1.4rem;
+}
+i.col_pj_zan:hover{
+	color: #009a61;
+}
+.col_zan_plus{
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 1.4rem;
+	color: #00916a;
+}
+.media:last-child{
+	border-bottom: 1px solid #eee;
+}
+.media{
+	padding: 10px 0;
+	border-top: 1px solid #eee;
+}
+/* 分页 */
+.col_page{
+	text-align: center;
+	margin: 0 auto;
+}
+.pagination li a{
+	color: #009a61;
+}
+.pagination .page_active a{
+	z-index: 999;
+    color: #fff;
+    background-color: #009a61;
+    border-color: #009a61;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: transparent;
+    border: 0px;
+}
+.panel-default {
+    border: 0px;
+}
+.panel {
+    margin-bottom: 0px;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+}
+/* .col_describe .col-md-4{
+	padding: 10px 0 0 50px;
+} */
+.col_describe .container{
+	margin: 0 auto;
+}
+.col_teacher{
+	/* margin-left: 50px; */
+}
+.col_teacher .media>h4{
+	padding-left: 10px;
+	color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    height: 40px;
+    margin: 0 0;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.col_teacher .media{
+	border: 1px solid #eee;
+	padding: 0;
+    padding-bottom: 15px;
+    border-radius: 4px;
+}	
+.col_teacher .media-left{
+	padding-left: 10px;
+}
+.col_teacher .col_name{
+	font-weight: 700;
+}
+.col_sw_num{
+	display: inline-block;
+	font-weight: 700;
+}
+.col_sw_span{
+	display: inline-block;
+}
+.col_swang i{
+	display: inline-block;
+	margin-left: 5px;
+	width: 14px;
+	height: 14px;
+}
+.col_swang .sw_i1{
+	background-position: 0,0;
+}
+.col_swang .sw_i2{
+	background-position: 28px, 0;
+}
+.col_swang .sw_i3{
+	background-position: 14px, 0;
+}
+.badge_icon{
+	background: url('../images/badge.svg')
+}
+.col_swang span{
+	display: inline-block;
+	line-height: 12px;
+	margin-right: 5px;
+	margin-bottom: 2px;
+    vertical-align: middle;
+}
+.col_teacher .col_media_content{
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    color: #999;
+}
+.col_morelecture{
+	width: 70px;
+	height: 30px;
+	color: #fff;
+	font-size: 1.2rem;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    outline: none;
+    border-radius: 4px;
+    box-shadow:none;
+    border: 1px solid transparent;
+}
+.col_morelecture:hover{
+	color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+/* 响应式布局 */
+@media (max-width:991px) {
+	.col_main .vue_pic img{
+		width: 80%;
+	}
+	.col_main P{
+   		-webkit-line-clamp: 1;
+	}
+}
+@media (max-width: 414px) {
+	.col_buy button{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 302px) {
+	.col_sw_span{
+		display: block;
+		position: relative;
+		left: -5px;
+	}
+}
+
+
+

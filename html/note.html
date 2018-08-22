@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>记笔记</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../font_xld8by73zt/iconfont.css">
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/note.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<!-- container -->
+	  	<div class="container">
+		    <div class="navbar-header logo-center">
+		      	<!-- logo -->
+		      	<a class="navbar-brand" href="../index.html">
+			      	<h1>
+			      		<img src="../images/logo-b.svg" alt="">
+			      	</h1>
+			    </a>
+		    </div>
+	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    		<span class="glyphicon glyphicon-search top_search visible-sm visible-xs"></span>
+      		    <!-- 右侧导航条和图标 -->
+	      		<ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown found visible-lg">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">创建<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="question.html">提问题</a></li>
+			            <li><a href="headline.html">发头条</a></li>
+			            <li><a href="article.html">写文章</a></li>
+			            <li><a href="note.html">记笔记</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">草稿箱</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown found hidden-lg">
+			          <a href="#" class="dropdown-toggle fa fa-plus" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="question.html">提问题</a></li>
+			            <li><a href="headline.html">发头条</a></li>
+			            <li><a href="article.html">写文章</a></li>
+			            <li><a href="note.html">记笔记</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">草稿箱</a></li>
+			          </ul>
+			        </li>
+			        <li class="index-msg-li">
+			        	<a href="#" class="fa fa-bell-o hidden-sm hidden-xs"></a>
+			        	<div class="index-msg clearfix">
+			        		<div class="msg-header">
+			        			<ul class="clearfix">
+			        				<li class="active"><a href="#"><i class="fa fa-bullhorn"></i></a></li>
+			        				<li><a href="#"><i class="fa fa-commenting-o"></i></a></li>
+			        				<li><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+			        				<li><a href="#"><i class="fa fa-user-plus"></i></a></li>
+			        			</ul>
+			        		</div>
+			        		<div class="msg-body"></div>
+			        		<div class="msg-footer">
+			        			<span>查看全部 >> </span>
+			        		</div>
+			        	</div>
+			        </li>
+			        <li class="index-private-li"> 
+			        	<a href="#" class="fa fa-envelope-o hidden-sm hidden-xs"></a>
+			        	<div class="index-private clearfix">
+			        		<div class="msg-header">
+			        			<span>最近的私信</span>
+			        		</div>
+			        		<div class="msg-body">
+			        			<p>没有人给你发私信</p>
+			        		</div>
+			        		<div class="msg-footer">
+			        			<span>查看全部 >> </span>
+			        		</div>
+			        	</div>
+			        </li>
+			        <li class="me">
+			        	<a href="personal.html" class="user"><img src="../images/user-64.png" alt="头像"></a>
+			        	<div class="user-info">
+			        		<div class="info-score clearfix">
+			        			<span>1 声望</span>
+			        			<div class="clearfix">
+			        				<span><b></b>0</span>
+			        				<span><b></b>1</span>
+			        				<span><b></b>2</span>
+			        			</div>
+			        		</div>
+			        		<hr>
+			        		<div class="info">
+			        			<ul class="clearfix">
+			        				<li><a href="#">我的笔记</a></li>
+			        				<li><a href="#">我的主页</a></li>
+			        				<li><a href="#">我的收藏</a></li>
+			        				<li><a href="#">我的档案</a></li>
+			        				<li><a href="#">受邀回答</a></li>
+			        				<li><a href="#">我的资产</a></li>
+			        				<li><a href="#">付费问答</a></li>
+			        				<li><a href="personal.html">个人设置</a></li>
+			        				<li><a href="#">退出</a></li>
+			        			</ul>
+			        		</div>
+			        		<hr>
+			        		<div class="info-footer">
+			        			<a href="#">用户申诉</a> · 
+			        			<a href="#">建议反馈</a> · 
+			        			<a href="#">邀请朋友</a>
+			        		</div>
+			        	</div>
+			        </li>
+	      		</ul>
+	    	</div>
+	    </div>
+	</nav>
+	<!-- 小屏底部导航条 -->
+	<nav class="phone-nav hidden-md hidden-lg">
+		<ul>
+			<li class="active">
+				<a href="../index.hmtl"><i class="fa fa-home"></i><span>首页</span></a>
+			</li>
+			<li>
+				<a href="Question-and-answer.html"><i class="fa fa-comments"></i><span>问答</span></a>
+			</li>
+			<li><a href="special.html"><i class="fa fa-pencil-square"></i><span>专栏</span></a></li>
+			<li><a href="lecture.html"><i class="fa fa-play-circle"></i><span>讲堂</span></a></li>
+			<li class="phone-nav-dropdown">
+				<a href="#"><i class="fa fa-bars"></i><span>更多</span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">职位</a></li>
+					<li><a href="activity.html">活动</a></li>
+					<li><a href="#">标签</a></li>
+					<li><a href="#">徽章</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div class="container note">
+		<!-- 标题 -->
+		<div>
+			<input class="title" type="text" placeholder="笔记描述">
+		</div>
+		<!-- 格式设置 -->
+		<div class="set clearfix">
+			<div class="set-left">
+				<select class="form-control pull-left input-sm">
+			        <optgroup label="文本语法">
+			            <option>纯文本</option>
+			            <option>Markdown</option>
+			            <option>Javascript</option>
+			            <option>CSS</option>
+			            <option>HTML</option>
+			            <option>PHP</option>
+			            <option>Python</option>
+			            <option>Ruby</option>
+			            <option>Go</option>
+			            <option>C/C++</option>
+			            <option>Java</option>
+			            <option>Shell/Bash</option>
+			        </optgroup>
+			    </select>
+			</div>
+			<div class="set-right clearfix">
+				<select class="form-control inline-block input-sm">
+		            <optgroup label="缩进模式">
+		                <option>空格缩进</option>
+		                <option>Tabs 缩进</option>
+		            </optgroup>
+		        </select>
+		        <select class="form-control inline-block input-sm">
+		            <optgroup label="缩进大小">
+		                <option>2</option>
+		                <option>4</option>
+		            </optgroup>
+		        </select>
+		        <select class="form-control inline-block input-sm">
+		            <optgroup label="换行模式">
+		                <option>自动换行</option>
+		                <option>不换行</option>
+		            </optgroup>
+		        </select>
+			</div>
+		</div>
+		<!-- 输入框 -->
+		<div class="note-input clearfix">
+			<div class="col">
+				1
+			</div>
+			<textarea></textarea>
+		</div>
+		<!-- 发布框 -->
+		<div class="comfire">
+			<div class="container clearfix">
+				<div>
+					<button class="btn" title="私密笔记不会被搜索到，且仅对知道 URL 的人可见">保存私密笔记</button>
+					<button class="btn" title="公开后无法再设置为私密">保存公开笔记</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/nav.js"></script>
+</html>

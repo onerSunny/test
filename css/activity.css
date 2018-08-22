@@ -1,0 +1,567 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+/*  activity_nav 最新活动  */
+.activity .container{
+	padding-left: 0px;
+}
+.activity .activity_nav{
+	height: 50px;
+	padding-left: 0px;
+	padding-right: 10px;
+}
+.activity .activity_nav h1{
+	font-size: 24px;
+	float: left;
+	line-height: 0px;
+}
+/* activity_city 全部城市 */
+/* activity_type 所有类型` */
+.activity .activity_nav .activity_city,.activity_type{
+	float: left;
+	margin: 11px 0px 10px 30px;
+	position: relative;
+	display: block;
+}
+.activity .activity_nav a{
+	color: #009a61;
+	font-size: 14px;
+}
+.activity .activity_nav a:hover{
+	color: #004e31;
+}
+.activity .activity_nav .option{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-top: 4px solid;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+.activity .activity_nav .activity_city .citys,.activity_type .types{
+	width: 152px;
+	background: white;
+	border: 1px solid #d6d6d6;
+	padding-top: 5px;
+	margin-top: 10px;
+	margin-left: -15px;
+	position: absolute;
+	z-index: 1;
+}
+.activity .activity_nav .activity_city .citys,.activity_type .types{
+	display: none;
+}
+.activity .activity_nav li{
+	width: 150px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.activity .activity_nav li.current{
+	color: white;
+	background: #009a61;
+}
+.activity .activity_nav li:hover{
+	background: #eeeeee;
+}
+.activity .activity_nav li.current:hover{
+	background: #009a61;
+}
+/* activity_submit 提交活动 */
+.activity .activity_nav .activity_submit{
+	width: 70px;
+	height: 30px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	font-size: 12px;
+	margin-top: 5px;
+	padding: 6px 10px;
+	float: right;
+}
+.activity .activity_nav .activity_submit:hover{
+	background: #eeeeee;
+}
+
+/* 轮播图 */
+.col-md-6{
+	display: block;
+}
+.col-sm-8,.col-sm-4{
+	padding-left: 0px;
+	padding-right: 10px;
+}
+.activity_top .carousel-inner img{
+	max-width: 100%;
+	height: 310px;
+}
+.activity_top .carousel-control.left,.activity_top .carousel-control.right {
+    background-image: none;
+}
+
+/* 日历 calendar */
+.activity .calendar{
+	border: 1px solid #E1E1E1;
+	border-bottom: none;
+	cursor: pointer;
+}
+/* 日历头部  calendar_header*/
+.activity .calendar .calendar_header{
+	width: 100%;
+	border-bottom: 1px solid #E1E1E1;
+	font-size: 14px;
+	color: #333;
+	height: 30px;
+}
+.activity .calendar .calendar_header .calendar_week{
+	text-align: center;
+	width: 14.2%;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	font-weight: bold;
+}
+/* 日历内容 calendar_content */
+.activity .calendar .calendar_content{
+	width: 100%;
+	height: 293px;
+}
+.activity .calendar .calendar_content .calendar_date{
+	height: 49px;
+	border-bottom: 1px solid #E1E1E1;
+}
+.activity .calendar .calendar_content .calendar_date .dates{
+	width: 14.2%;
+	height: 48px;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	border-right: 1px solid #E1E1E1; 
+	/* dates  相对定位*/
+	position: relative;
+	/* overflow: hidden; */
+}
+.activity .calendar .calendar_content .calendar_date .last{
+	border-right: none;
+}
+/* 各dates的color、background */
+.activity .calendar .calendar_date .first,.last{
+	background: #f6f6f6;
+}
+.activity .calendar .calendar_content .calendar_date:nth-of-type(1),.calendar_date:nth-of-type(6){
+	color: #cccccc;
+}
+.activity .calendar .calendar_content .calendar_date .first,.calendar_date .last{
+	color: #d7021b;
+}
+.activity .calendar .calendar_content .calendar_date:nth-of-type(1) .first{
+	color: #ecb9bf;
+}
+.activity .calendar .calendar_content .calendar_date:nth-of-type(6) .first,.calendar_date:nth-of-type(6) .last{
+	color: #ecb9bf;
+}
+.activity .calendar .calendar_content .one{
+	color: #800080;
+	
+}
+.activity .calendar .calendar_content .twenty-six{
+	background: #e8fde7;
+}
+.activity .calendar .calendar_content .calendar_date p{
+	height: 20px;
+	margin: 0px 0px;
+}
+.activity .calendar .calendar_content .calendar_date span{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	display: inline-block;
+	background: #7ed321;
+}
+.activity .calendar .calendar_content .calendar_date .first:hover{
+	background: #f6f6f6;
+}
+
+
+/* 鼠标移入 */
+.activity .calendar .calendar_content .calendar_date .hover{
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: #1a1a1a;
+	transform: rotate(45deg);
+	margin: -5px auto;
+}
+/* 鼠标移入显示的内容 */
+.activity .calendar .calendar_content .calendar_date .text{
+	background: #1a1a1a;
+	color: #f0eaea;
+	text-align: center;
+	font-size: 13px;
+	border-radius: 5px;
+	padding: 2px 8px;
+}
+.activity .calendar .calendar_content .ones,.nines_1,.nines_2,.nines_3,.nines_4,.nines_5,.tens_1,.twenty-ones_1,.twenty-ones_2,.twenty-threes_1,.twenty-threes_2,.twenty-threes_3,.twenty-threes_4,.twenty-fours_1,.twenty-fours_2,.twenty-eights_1,.twenty-eights_2,.thirtys_1,.thirtys_2,.thirtys_3,.twos_1,.sixs_1,.sixs_2,.sevens_1{
+	/* 鼠标移入显示的内容 绝对定位，而且要显示在最上面，不能被覆盖 */
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+/* 鼠标移入显示div的大小 */
+.activity .calendar .calendar_content .calendar_date .nines_text,.tens_text,.twenty-ones_text,.twenty-threes_text,.twenty-fours_text,.twenty-eights_text,.thirtys_text,.twos_text,.sixs_text,.sevens_text{
+	width: 200px;
+	height: 40px;
+}
+/* 1 */
+.activity .calendar .calendar_content .one .ones{
+	top: -25px;
+	left: 12px;
+}
+.activity .calendar .calendar_content .calendar_date .one .one_text{
+	width: 52px;
+	height: 22px;
+	padding: 2px 5px;
+}
+/* 9 */
+.activity .calendar .calendar_content .nine .nines_1{
+	top: -20px;
+	left: -88px;
+}
+.activity .calendar .calendar_content .nine .nines_2{
+	top: -20px;
+	left: -75px;
+}
+.activity .calendar .calendar_content .nine .nines_3{
+	top: -5px;
+	left: -62px;
+}
+.activity .calendar .calendar_content .nine .nines_3 .nines_text{
+	height: 25px;
+}
+.activity .calendar .calendar_content .nine .nines_4{
+	top: -20px;
+	left: -49px;
+}
+.activity .calendar .calendar_content .nine .nines_5{
+	top: -20px;
+	left: -36px;
+}
+/* 10 */
+.activity .calendar .calendar_content .ten .tens_1{
+	top: -20px;
+	left: -62px;
+}
+/* 21 */
+.activity .calendar .calendar_content .twenty-one .twenty-ones_1{
+	top: -20px;
+	left: -68px;
+}
+.activity .calendar .calendar_content .calendar_date .twenty-one .twenty-ones_2 .twenty-ones_text{
+	height: 25px;
+}
+.activity .calendar .calendar_content .twenty-one .twenty-ones_2{
+	top: -5px;
+	left: -55px;
+}
+/* 23 */
+.activity .calendar .calendar_content .twenty-three .twenty-threes_1{
+	top: -20px;
+	left: -82px;
+}
+.activity .calendar .calendar_content .twenty-three .twenty-threes_2{
+	top: -20px;
+	left: -69px;
+}
+.activity .calendar .calendar_content .twenty-three .twenty-threes_3{
+	top: -20px;
+	left: -56px;
+}
+.activity .calendar .calendar_content .twenty-three .twenty-threes_4{
+	top: -20px;
+	left: -43px;
+}
+/* 24 */
+.activity .calendar .calendar_content .twenty-four .twenty-fours_1{
+	top: -20px;
+	left: -68px;
+}
+.activity .calendar .calendar_content .twenty-four .twenty-fours_2{
+	top: -5px;
+	left: -55px;
+}
+.activity .calendar .calendar_content .twenty-four .twenty-fours_2 .twenty-fours_text{
+	height: 25px;
+}
+/* 28 */
+.activity .calendar .calendar_content .twenty-eight .twenty-eights_1{
+	top: -20px;
+	left: -68px;
+}
+.activity .calendar .calendar_content .twenty-eight .twenty-eights_2{
+	top: -5px;
+	left: -55px;
+}
+.activity .calendar .calendar_content .twenty-eight .twenty-eights_2 .twenty-eights_text{
+	height: 25px;
+}
+/* 30 */
+.activity .calendar .calendar_content .thirty .thirtys_1{
+	top: -20px;
+	left: -75px;
+}
+.activity .calendar .calendar_content .thirty .thirtys_2{
+	top: -20px;
+	left: -62px;
+}
+.activity .calendar .calendar_content .thirty .thirtys_3{
+	top: -5px;
+	left: -49px;
+}
+.activity .calendar .calendar_content .thirty .thirtys_3 .thirtys_text{
+	height: 25px;
+}
+/* 2 */
+.activity .calendar .calendar_content .two .twos_1{
+	top: -20px;
+	left: -62px;
+}
+/* 6 */
+.activity .calendar .calendar_content .six .sixs_1{
+	top: -5px;
+	left: -68px;
+}
+.activity .calendar .calendar_content .six .sixs_1 .sixs_text{
+	height: 25px;
+}
+.activity .calendar .calendar_content .six .sixs_2{
+	top: -5px;
+	left: -55px;
+	
+}
+.activity .calendar .calendar_content .six .sixs_2 .sixs_text{
+	height: 25px;
+}
+/* 7 */
+.activity .calendar .calendar_content .seven .sevens_1{
+	top: -20px;
+	left: -62px;
+}
+/* **************************** */
+.activity .calendar .calendar_date .nine,.ten{
+	position: relative;
+}
+.activity .calendar .calendar_date .con{
+	position: absolute;
+	z-index: 3;
+	display: inline-block;
+	width: 24px;
+	height: 18px;
+	border-radius: 3px;
+	border: 1px solid #e1e1e1;
+	font-size: 16px;
+	color: #333333;
+	background: #ededed;
+	top: 48px;
+	left: 50%;
+	margin-left: -12px;
+	display: none;
+}
+.activity .calendar .calendar_date .cons span,a{
+	display: inline-block;
+}
+.activity .calendar .calendar_date .cons a{
+	color: #009a61;
+}
+.activity .calendar .calendar_date .cons a:hover{
+	color: #004e31;
+}
+.activity .calendar .calendar_date .cons{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	top: 50px;
+	background: #f6f6f6;
+	width: 700%;
+	font-size: 14px;
+	display: none;
+	padding: 10px 10px;
+	text-align: left;
+}
+/* 9 */
+.activity .calendar .calendar_date .nine_cons{
+	right: 0px;
+}
+/* 10 */
+.activity .calendar .calendar_date .ten_cons{
+	left: 0px;
+}
+/* 21 */
+.activity .calendar .calendar_date .twenty-one_cons{
+	left: -400%;
+}
+/* 23 */
+.activity .calendar .calendar_date .twenty-three_cons{
+	right: 0px;
+}
+/* 24 */
+.activity .calendar .calendar_date .twenty-four_cons{
+	left: 0px;
+}
+/* 28 */
+.activity .calendar .calendar_date .twenty-eight_cons{
+	left: -400%;
+}
+/* 30 */
+.activity .calendar .calendar_date .thirty_cons{
+	right: 0px;
+}
+/* 2 */
+.activity .calendar .calendar_date .two_cons{
+	left: -100%;
+}
+/* 6 */
+.activity .calendar .calendar_date .six_cons{
+	left: -500%;
+}
+/* 7 */
+.activity .calendar .calendar_date .seven_cons{
+	right: 0px;
+}
+
+
+/* ***************************** */
+
+/* 活动内容  activity_content*/
+.col-md-3{
+	width: 25%;
+	margin-top: 20px;
+}
+.activity_content{
+	height: 280px;
+	background: #f3f3f3;
+	position: relative;
+	border: 1px solid #eeeeee;
+}
+.activity_content img{
+	width: 100%;
+}
+.activity_content .contents{
+	height: 100px;
+	padding: 12px;
+}
+.activity_content .contents a.title{
+	font-size: 16px;
+	color: #333333;
+}
+.activity_content .contents ul{
+	margin-top: 10px;
+}
+.activity_content .contents ul li{
+	width: 100%;
+	font-size: 13px;
+	color: #999;
+}
+.activity_content .contents a.enter{
+	font-size: 12px;
+	padding: 5px 8px;
+	border: 1px solid #cccccc;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.activity_content .contents a.end{
+	color: #333333;
+	background: white;
+}
+.activity_content .contents a.end:hover{
+	background: #e6e6e6;
+}
+.activity_content .contents a.entry{
+	color: white;
+	background: #009a61;
+}
+.activity_content .contents a.entry:hover{
+	background: #006741;
+}
+
+/* 尾部的页数 page */
+.activity .page{
+	height: 120px;
+	width: 100%;
+	float: left;
+}
+.activity .page ul{
+	height: 34px;
+	width: 270px;
+	margin: 44px auto;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+}
+.activity .page ul li{
+	height: 32px;
+	color: #009a61;
+	padding: 5px 12px;
+	border-left: 1px solid #dddddd;
+	float: left;
+	cursor: pointer;
+}
+.activity .page ul li.current{
+	border-left: none;
+	color: white;
+	background: #009a61;
+}
+.activity .page ul li:hover{
+	color: #004e31;
+	background: #eeeeee;
+}
+.activity .page ul li.current:hover{
+	color: white;
+	background: #009a61;
+}
+.activity .page ul li.disabled:hover{
+	background: none;
+	cursor: not-allowed;
+}
+/* 媒体查询 */
+@media (max-width: 990px) {
+	.col-md-3{
+		width: 33.3%;
+	}
+
+	.activity .page ul li{
+		display: none;
+	}
+	.activity .page ul{
+		width: 101px;
+	}
+	.activity .page ul li.current{
+		display: inline-block;
+	}
+	.activity .page ul li.next{
+		display: inline-block;
+	}
+}
+@media (max-width: 768px) {
+	.col-md-6{
+		display: none;
+	}
+	.activity .activity_nav .activity_city,.activity_type{
+		display: none;
+	}
+	.col-md-3{
+		width: 100%;
+	}
+	.activity_content{
+		height: initial;
+	}
+	.activity_top .carousel-inner img{
+		height: initial;
+	}
+}
+

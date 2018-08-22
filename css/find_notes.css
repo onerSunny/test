@@ -1,0 +1,138 @@
+/*
+* @Author: Administrator
+* @Date:   2018-06-24 15:34:13
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-07-01 21:46:36
+*/
+body{
+    font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+}
+.note_main .media-object {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.note_data {
+	font-size: 1.4rem;
+	color: #777;
+	margin: 0px;
+}
+
+.note_item_content{
+	font-size: 1.4rem;
+}
+.media-body a {
+	font-size: 1.6rem;
+	color: #009A61;
+}
+
+.media-heading {
+	padding-top: 5px;
+	font-size: 1.8rem;
+}
+
+.note_code {
+	margin-top: 20px;
+}
+
+.note_code .snippet-num li {
+	padding-left: -200px;
+}
+
+.note_login {
+	padding: 15px;
+	border-radius: 4px;
+	background: #fcf8e3;
+	color: #8a6d3b;
+	border: 1px solid #FBEED5;
+	margin-top: 30px;
+}
+
+.note_btn {
+	margin-top: 10px;
+}
+
+.note_btn button {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.note_btn button i {
+	font-size: 1.8rem;
+	margin-right: 3px;
+}
+
+.col_page {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.pagination li a {
+	color: #009a61;
+}
+
+.pagination .page_active a {
+	z-index: 999;
+	color: #fff;
+	background-color: #009a61;
+	border-color: #009a61;
+}
+
+.panel-default>.panel-heading {
+	color: #333;
+	background-color: transparent;
+	border: 0px;
+}
+
+.panel-default {
+	border: 0px;
+}
+
+.note_main .snippet-wrap pre.sh_sourceCode {
+	padding: 1em;
+	line-height: 1.8em;
+	overflow: auto;
+	position: relative;
+	/* border-radius: 15px; */
+	box-shadow: 2px 2px 5px transparent;
+	-moz-box-shadow: 2px 2px 5px transparent;
+	-webkit-box-shadow: 2px 2px 5px transparent;
+}
+.hide_item{
+	display: none;
+}
+.note_item{
+	padding: 20px 0px;
+}
+.note_main .note_item_content{
+    border: 1px solid #ccc;
+	/* border-radius: 15px; */
+	box-shadow: 2px 2px 5px transparent;
+	-moz-box-shadow: 2px 2px 5px transparent;
+	-webkit-box-shadow: 2px 2px 5px transparent;
+	margin-top: 20px;
+	padding: 1em 2.5em;
+}
+.note_item_content table{
+	margin: 10px 0px;
+}
+.p_pink{
+    padding: 2px 4px;
+    font-size: 0.9em;
+    color: #c7254e;
+    background: #f9f2f4;
+    border-radius: 4px;
+}
+.note_item th,.note_item td{
+	    border: 1px solid #ddd;
+	    border-bottom: 0px;
+}
+.note_item .last_tr{
+	border-bottom: 1px solid #ddd;
+}
+.note_item .lec_item_text{
+	border-left: 3px solid #009a61;
+}

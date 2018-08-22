@@ -1,0 +1,376 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.top{
+	height: 80px;
+	background: #d8d8d8;
+}
+/* 找工作 找企业 */
+.find_work .container{
+	padding-left: 0px;
+}
+.find_work .container_left{
+	padding-left: 0px;
+}
+.find_work .search .search_top{
+	height: 50px;
+	position: relative;
+}
+.find_work .search .search_top ul li{
+	height: 50px;
+	width: 100px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-right: 1px;
+	cursor: pointer;
+}
+.find_work .search .search_top ul li.current{
+	color: #e41b23;
+	background: #f6f6f6;
+}
+.find_work .search .search_top ul li:hover{
+	background: #eeeeee;
+	padding-bottom: 1px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #dddddd;
+}
+.find_work .search .search_top ul li.current:hover{
+	background: #f6f6f6;
+	border: none;
+}
+/* a 标签 */
+.find_work .search .search_top a{
+	font-size: 14px;
+	position: absolute;
+	right: 0px;
+	bottom: 15px;
+	color: #009a61;
+	text-decoration: none;
+}
+.find_work .search .search_top a i{
+	color: #cccccc;
+}
+.find_work .search .search_top a:hover{
+	color: #004e31;
+	text-decoration: underline;
+}
+/* 搜索内容 */
+.find_work .search_con {
+	background: #f6f6f6;
+	padding: 20px;
+	display: block;
+	position: relative;
+}
+/* 搜索框 */
+/* .find_work .search_con .search_key{
+	overflow: hidden;
+} */
+.find_work .search_con .search_key .texts{
+	width: 100%;
+	height: 33px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+}
+.find_work .search_con .search_key .key_words{
+	width: 520px;
+	padding: 15px;
+	font-size: 14px;
+	background: white;
+	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.18);
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	top: 33px;
+	display: none;
+}
+/* 点击搜索框，显示出来的search_words */
+/* ultop */
+.find_work .search_con .key_words .ultop{
+	overflow: hidden;
+}
+.find_work .search_con .key_words .ultop li a{
+	float: left;
+	color: #666666;
+	text-decoration: none;
+	padding: 1px 4px;
+	margin-right: 8px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.find_work .search_con .key_words .ultop li.current a{
+	background: #009a61;
+	color: white;
+}
+.find_work .search_con .key_words .ultop li a:hover{
+	background: #eeeeee;
+}
+.find_work .search_con .key_words .ultop li.current a:hover{
+	background: #009a61;
+}
+/* ulcon */
+.find_work .search_con .key_words .ulcon{
+	overflow: hidden;
+	margin-bottom: 0px;
+	display: none;
+}
+.find_work .search_con .key_words .ulcon li{
+	background: #ebf5f3;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.find_work .search_con .key_words .ulcon li a{
+	color: #017e66;
+	text-decoration: none;
+	padding: 2px 10px;
+}
+.find_work .search_con .key_words .ulcon li img{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	float: left;
+	margin: 3px -3px 2px 10px;
+}
+.find_work .search_con .key_words .current_ul{
+	display: block;
+}
+/* 按钮 搜索职位 */
+.find_work .search_con .search_key button{
+	width: 100%;
+	height: 33px;
+	font-size: 14px;
+	color: white;
+	background: #009a61;
+	border: 1px solid #008151;
+	border-radius: 5px;
+}
+.find_work .search_con .search_key button:hover{
+	background: #006741;
+}
+.col-md-2{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.col-md-10{
+	padding-left: 0px;
+}
+/* 热门搜索 */
+.find_work .search_con .search_hot,.search_city{
+	width: 100%;
+	color: #999999;
+	font-size: 14px;
+	padding-top: 15px;
+	overflow: hidden;
+	padding-right: 15px;
+}
+.find_work .search_con .search_hot span,.search_city span{
+	display: inline-block;
+	float: left;
+	color: #333333;
+}
+.find_work .search_con .search_hot a,.search_city a{
+	border:1px solid transparent;
+	cursor: pointer;
+	color: #009a61;
+}
+.find_work .search_con .search_hot a:hover,.search_city a:hover{
+	border:1px solid #009a61;
+	border-radius: 3px;
+	color: #004e31;
+	text-decoration: none;
+}
+.find_work .search_con .search_hot .works,.search_city .citys{
+	float: left;
+}
+.find_work .search_con .search_hot .more,.search_city .more{
+	width: 50px;
+	float: left;
+	display: block;
+}
+.find_work .search_con .search_hot .more_works,.search_city .more_citys{
+	display: none;
+}
+/* 高级搜索 */
+.find_work .search_con .super{
+	cursor: pointer;
+	color: #009a61;
+	font-size: 13px;
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+}
+.find_work .search_con .super:hover{
+	color: #004e31;
+}
+/* 推荐职位 */
+.find_work .recommend h2,.new h2{
+	font-size: 18px;
+	color: red;
+	margin-bottom: 0px;
+}
+.find_work .recommend hr,.new hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	border-top: 1px solid #dddddd;
+}
+.find_work .recommend a,.new a{
+	float: right;
+	color: #009a61;
+	margin-top: 10px;
+}
+.find_work .recommend a:hover,.new a:hover{
+	color: #004e31;
+}
+/* 最新职位 */
+.find_work .new{
+	margin-top: 60px;
+}
+.find_work .new .new_job .col-md-6{
+	padding-left: 0px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eeeeee;
+}
+.find_work .new .new_job .job{
+	color: #333333;
+	font-size: 16px;
+	font-weight: bold;	
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+}
+.find_work .new .new_job span,p{
+	color: #777777;
+	font-size: 14px;
+}
+.find_work .new .new_job p{
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+.find_work .new .new_job p b{
+	color: #529a61;
+}
+.find_work .new .new_job span a{
+	float: left;
+	color: #777777;
+	margin-top: 0px;
+}
+.find_work .col-md-9.col-xs-12{
+	margin-bottom: 50px;
+}
+/* 个人档案 */
+.find_work .profile{
+	padding: 5px;
+	background: #f0f5f3;
+}
+/* 个人档案 标题 */
+.find_work .profile .title{
+	font-size: 16px;
+	color: #009a61;
+	text-align: center;
+}
+/* 个人档案 内容 */
+.find_work .profile .profile_con{
+	padding: 15px;
+	background: white;
+	position: relative;
+}
+.find_work .profile .profile_con span{
+	font-size: 16px;
+	color: red;
+}
+.find_work .profile .profile_con p{
+	font-size: 14px;
+	color: #666666;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.find_work .profile .profile_con button{
+	color: white;
+	background: #009a61;
+	padding: 5px 12px;
+	font-size: 14px;
+	border: 1px solid #008151;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.find_work .profile .profile_con button:hover{
+	background: #006741;
+}
+.find_work .profile .profile_con img{
+	width: 50px;
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+}
+/* 企业推荐 */
+.find_work .recommends {
+	margin-top: 20px;
+	border-top: 1px solid #eeeeee;
+}
+.find_work .recommends h5{
+	font-size: 18px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+/* 今日头条 *//* 学堂在线 */
+.find_work .recommends .headline_img,.online_img{
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid #dddddd;
+	position: relative;
+}
+.find_work .recommends .headline_img img,.online_img img{
+	width: 100%;
+}
+.find_work .recommends .headline_img span,.online_img span{
+	display: inline-block;
+	cursor: pointer;
+	color: #999999;
+	font-size: 12px;
+	padding: 2px 3px;
+	border: 1px solid #dddddd;
+	background: white;
+	position: absolute;
+	bottom: -5px;
+	right: -5px;
+}
+.find_work .recommends .headline a,.online a{
+	color: #009a61;
+	font-size: 14px;
+	display: inline-block;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.find_work .recommends .headline a:hover,.online a:hover{
+	color: #004e31;
+}
+.find_work .recommends .headline p,.online p{
+	color: #333333;
+	font-size: 14px;
+}
+@media (min-width: 993px) {
+	.col-md-3.col-xs-12{
+		margin-top: 15px;
+	}
+}
+@media (max-width: 992px) {
+	.col-md-3.col-xs-12{
+		padding-left: 0px;
+	}
+}
+@media (max-width: 768px) {
+	.find_work .container{
+		padding-left: 15px;
+	}
+}

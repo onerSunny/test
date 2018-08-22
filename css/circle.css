@@ -1,0 +1,280 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.circle .container{
+	padding-left: 0px;
+}
+/* circle_top 圈子 */
+.circle{
+	margin-top: 30px;
+}
+.circle .circle_left{
+	padding-left: 0px;
+}
+.circle .circle_top h3{
+	font-weight: bold;
+	margin-top: 0px;
+}
+.circle .circle_top p{
+	font-size: 14px;
+	color: #777777;
+}
+/* circle_nav 导航条 */
+.circle .circle_nav ul{
+	height: 40px;
+	border-bottom: 1px solid #dddddd;
+}
+.circle .circle_nav ul li{
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #11a06b;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+.circle .circle_nav ul li:nth-of-type(2){
+	width: 80px;
+}
+.circle .circle_nav .current{
+	color: #555555;
+	border: 1px solid #dddddd;
+	border-bottom: 1px solid white;
+}
+.circle .circle_nav ul li:hover{
+	background: #eeeeee;
+}
+.circle .circle_nav .current:hover{
+	background: white;
+}
+/* circle_post 最近的帖子  */
+.circle .circle_post .circle_post_header h4{
+	font-size: 18px;
+	color: #333333;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #eeeeee;
+}
+.circle .circle_post .circle_post_header h4 a{
+	color: #333333;
+	text-decoration: none;
+	padding: 3px 6px;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.5;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+}
+.circle .circle_post .circle_post_header a:hover{
+	background: #e6e6e6;
+}
+.circle_post .circle_post_con{
+	height: 80px;
+	padding: 15px 10px;
+	position: relative;
+	border-bottom: 1px solid #eeeeee;
+}
+.circle_post_con img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+}
+.circle_post_con .circle_post_title{
+	height: 20px;
+	line-height: 25px;
+	width: 430px;
+	float: left;
+}
+.circle_post_con .circle_post_title .fa-thumb-tack::before{
+    content: "\f08d";
+    color: #F2AE43;
+    font-size: 16px;
+}
+.circle_post_con .circle_post_title a{
+	color: #579a61;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+.circle_post_con .circle_post_title a:hover{
+	color: #004e31;
+}
+.circle_post_con .circle_post_author{
+	height: 30px;
+	width: 430px;
+	font-size: 13px;
+	color: #999999;
+}
+.circle_post_con .circle_post_author a{
+	color: #999999;
+}
+.circle_post_con .circle_post_from{
+	top: 50%;
+	margin-top: -10px;
+	left: 70%;
+	position: absolute;
+}
+.circle_post_con .circle_post_from a{
+	text-decoration: none;
+	color: #8B572A;
+	font-size: 13px;
+	padding: 3px 5px;
+	background: #f2ebe5;
+}
+.circle_post_con .circle_post_from a:hover{
+	color: white;
+	background: #8b572a;
+}
+.circle_post_con .circle_post_comment{
+	top: 50%;
+	margin-top: -10px;
+	margin-left: 90%;
+	font-size: 16px;
+	color: #999;
+	position: absolute;
+}
+.circle_post_con .circle_post_comment .fa-commenting::before{
+	content: "\f27a";
+	color: #999999;
+	font-size: 16px;
+}
+/* 广告 */
+.circle .advertisement{
+	display: block;
+}
+.circle .advertisement img{
+	width: 255px;
+	height: 255px;
+}
+.circle .advertisement p{
+	text-align: center;
+}
+.circle .advertisement p a{
+	font-size: 12px;
+	color: #9E9E9E;
+}
+/* 今日热议 */
+.circle .hot_discussion{
+	height: 140px;
+	margin-top: 20px;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	display: block;
+}
+.circle .hot_discussion p{
+	font-size: 16px;
+	color: #333333;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+.circle .hot_discussion div a{
+	font-size: 14px;
+	color: #009a79;
+	height: 50px;
+}
+.circle .hot_discussion div a:hover{
+	color: #004e31;
+}
+.circle .hot_discussion span{
+	font-size: 14px;
+	color: #777777;
+	display: inline-block;
+}
+/* 发现圈子 find_circle */
+.circle .find_circle{
+	display: block;
+}
+.circle .find_circle .more_circle{
+	margin-top: 20px;
+	position: relative;
+}
+.circle .find_circle .more_circle span{
+	color: #333333;
+	font-size: 16px;
+
+}
+.circle .find_circle .more_circle a{
+	color: #009a79;
+	font-size: 14px;
+	position: absolute;
+	float: right;
+	right: 10px;
+}
+.circle .find_circle .more_circle a:hover{
+	color: #004e31;
+} 
+.circle .find_circle .authors{
+	width: 255px;
+	height: 40px;
+	margin-top: 20px;
+}
+.circle .find_circle .authors img{
+	width: 40px;	
+	height: 40px;
+	float: left;
+}
+.circle .find_circle .authors .authors_info{
+	width: 200px;
+	height: 40px;
+	float: left;
+	margin-left: 15px;
+}
+.circle .find_circle .authors .authors_info a{
+	color: #009a61;
+	font-size: 14px;
+
+}
+.circle .find_circle .authors .authors_info a:hover{
+	color: #333333;
+}
+.circle .find_circle .authors .authors_info p{
+	color: #9999a5;
+	font-size: 13px;
+}
+.circle .find_circle .authors .authors_info p span{
+	color: #f5a623;
+
+}
+/* 加入自己感兴趣的圈子 */
+.circle .circle_post .interest{
+	height: 120px;
+	text-align: center;
+	line-height: 120px;
+	font-size: 14px;
+}
+.circle .circle_post .interest span{
+	color: #009a61;
+	padding: 7px 15px;
+	border: 1px solid #dddddd;
+	cursor: pointer;
+	border-radius: 15px;
+	margin-left: 5px;
+}
+.circle .circle_post .interest span:hover{
+	background: #eeeeee;
+}
+
+/* 媒体查询 */
+@media (max-width: 1199px) {
+	.circle .advertisement{
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.col-xs-12{
+		width: 100%;
+	}
+	.circle .hot_discussion{
+		display: none;
+	}
+	.circle .find_circle{
+		display: none;
+	}
+}
+

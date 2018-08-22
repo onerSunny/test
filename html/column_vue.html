@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Vue.js 实战</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/column_vue.css">
+		<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../font_xld8by73zt/iconfont.css">
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="../css/footer.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<!-- container -->
+		  	<div class="container">
+			    <div class="navbar-header logo-center">
+			      	<!-- logo -->
+			      	<a class="navbar-brand" href="../index.html">
+				      	<h1>
+				      		<img src="../images/logo-b.svg" alt="">
+				      	</h1>
+				    </a>
+			    </div>
+
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    		<span class="glyphicon glyphicon-search top_search visible-sm visible-xs"></span>
+	    			<!-- 左侧导航条 -->
+	    			<div class="change clearfix hidden-sm hidden-xs">
+				      	<ul class="nav navbar-nav clearfix">
+					        <li class="active"><a href="../index.html">首页<span class="sr-only">(current)</span></a></li>
+					        <li><a href="Question-and-answer.html">问答</a></li>
+					        <li><a href="special.html">专栏</a></li>
+					        <li><a href="lecture.html">讲堂</a></li>
+					        <li class="dropdown find">
+					          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现<span class="caret"></span></a>
+					          	<div class="dropdown-block">
+						          	<ul class="dropdown-menu clearfix">
+							            <li><a href="circle.html">圈子</a></li>
+							            <li><a href="activity.html">活动</a></li>
+							            <li><a href="#">标签</a></li>
+							            <li><a href="find_work.html">找工作</a></li>
+							            <li><a href="#">排行榜</a></li>
+							            <li><a href="find_work.html">找工作</a></li>
+							            <li><a href="#">徽章</a></li>
+							            <li><a href="find_notes.html">笔记</a></li>
+							            <li><a href="#">开发手册</a></li>
+							            <li><a href="#">广告投放</a></li>
+							        </ul>
+							        <div class="ul-active">
+							        	<a href="activity_isc.html">
+							        		<h5>2018首届“顶天立地”iFLYTEK AI开发者大赛</h5>
+							        	</a>
+							        	<span>合肥</span> · 
+							        	<span>2018-07-11 周三</span> · 
+							        	<span>报名中</span>
+							        	<div class="more">
+							        		<a href="activity.html">查看更多活动</a>
+							        	</div>
+							        </div>
+						        </div>
+					        </li>
+				        </ul>
+				        <!-- 搜索框 -->
+			      		<form class="navbar-form navbar-left clearfix">
+					        <div class="form-group">
+					          <input type="text" class="form-control" placeholder="搜索问题或关键字">
+					          <span class="glyphicon glyphicon-search search visible-lg"></span>
+					        </div>
+			      		</form>
+		      		</div>
+	      		    <!-- 右侧导航条和图标 -->
+		      		<ul class="nav navbar-nav navbar-right">
+				        <li class="dropdown found visible-lg">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">创建<span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="question.html">提问题</a></li>
+				            <li><a href="headline.html">发头条</a></li>
+				            <li><a href="article.html">写文章</a></li>
+				            <li><a href="note.html">记笔记</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">草稿箱</a></li>
+				          </ul>
+				        </li>
+				        <li class="dropdown found hidden-lg">
+				          <a href="#" class="dropdown-toggle fa fa-plus" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="question.html">提问题</a></li>
+				            <li><a href="headline.html">发头条</a></li>
+				            <li><a href="article.html">写文章</a></li>
+				            <li><a href="note.html">记笔记</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">草稿箱</a></li>
+				          </ul>
+				        </li>
+				        <li class="index-msg-li">
+				        	<a href="#" class="fa fa-bell-o hidden-sm hidden-xs"></a>
+				        	<div class="index-msg clearfix">
+				        		<div class="msg-header">
+				        			<ul class="clearfix">
+				        				<li class="active"><a href="#"><i class="fa fa-bullhorn"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-commenting-o"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-user-plus"></i></a></li>
+				        			</ul>
+				        		</div>
+				        		<div class="msg-body"></div>
+				        		<div class="msg-footer">
+				        			<span>查看全部 >> </span>
+				        		</div>
+				        	</div>
+				        </li>
+				        <li class="index-private-li"> 
+				        	<a href="#" class="fa fa-envelope-o hidden-sm hidden-xs"></a>
+				        	<div class="index-private clearfix">
+				        		<div class="msg-header">
+				        			<span>最近的私信</span>
+				        		</div>
+				        		<div class="msg-body">
+				        			<p>没有人给你发私信</p>
+				        		</div>
+				        		<div class="msg-footer">
+				        			<span>查看全部 >> </span>
+				        		</div>
+				        	</div>
+				        </li>
+				        <li class="me">
+				        	<a href="personal.html" class="user"><img src="../images/user-64.png" alt="头像"></a>
+				        	<div class="user-info">
+				        		<div class="info-score clearfix">
+				        			<span>1 声望</span>
+				        			<div class="clearfix">
+				        				<span><b></b>0</span>
+				        				<span><b></b>1</span>
+				        				<span><b></b>2</span>
+				        			</div>
+				        		</div>
+				        		<hr>
+				        		<div class="info">
+				        			<ul class="clearfix">
+				        				<li><a href="#">我的笔记</a></li>
+				        				<li><a href="#">我的主页</a></li>
+				        				<li><a href="#">我的收藏</a></li>
+				        				<li><a href="#">我的档案</a></li>
+				        				<li><a href="#">受邀回答</a></li>
+				        				<li><a href="#">我的资产</a></li>
+				        				<li><a href="#">付费问答</a></li>
+				        				<li><a href="personal.html">个人设置</a></li>
+				        				<li><a href="#">退出</a></li>
+				        			</ul>
+				        		</div>
+				        		<hr>
+				        		<div class="info-footer">
+				        			<a href="#">用户申诉</a> · 
+				        			<a href="#">建议反馈</a> · 
+				        			<a href="#">邀请朋友</a>
+				        		</div>
+				        	</div>
+				        </li>
+		      		</ul>
+		    	</div>
+		    </div>
+		</nav>
+		<!-- 小屏底部导航条 -->
+		<nav class="phone-nav hidden-md hidden-lg">
+			<ul>
+				<li class="active">
+					<a href="../index.hmtl"><i class="fa fa-home"></i><span>首页</span></a>
+				</li>
+				<li>
+					<a href="Question-and-answer.html"><i class="fa fa-comments"></i><span>问答</span></a>
+				</li>
+				<li><a href="special.html"><i class="fa fa-pencil-square"></i><span>专栏</span></a></li>
+				<li><a href="lecture.html"><i class="fa fa-play-circle"></i><span>讲堂</span></a></li>
+				<li class="phone-nav-dropdown">
+					<a href="#"><i class="fa fa-bars"></i><span>更多</span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">职位</a></li>
+						<li><a href="activity.html">活动</a></li>
+						<li><a href="#">标签</a></li>
+						<li><a href="#">徽章</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- 当前位置 -->
+		<section class="col_title">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<ul class="list-inline unstyled">
+							<li><a href="">讲堂</a></li>
+							<li class="col_title_active">系列讲座介绍</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<!-- 课程图片和价钱 -->
+		<section class="col_main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 vue_pic">
+					<img class="img-responsive" src="../images/vue.png" alt="">
+				</div>
+				<div class="col-md-6">
+					<h3>Vue.js 实战系列</h3>
+					<p>本系列系统的讲解了 Vue.js 的组件、webpack、插件和 Render 函数用法，包含示例，适合 Vue.js 初学者。<br>系列讲座 9折。</p>
+					<div class="col_star">
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="col_star_font">4.8</span>
+						<span class="col_people">（2886 人已报名）</span>
+					</div>
+					<span class="col_include">包含4场讲座</span>
+					<span class="money">￥36.00</span><del>￥39.60</del>
+					<div class="col_buy">
+						<button class="btn btn-lg">立即购买</button>
+					</div>
+					<div class="col-share pull-right">
+						<span class="fa fa-share-alt"> <a href=""> 分享</a></span>
+						<span class="fa fa-bookmark"> <a href=""> 305收藏</a></span>
+					</div>
+				</div>
+			</div>
+		</div>	
+		</section>
+		<section class="col_describe">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<!-- 系列讲座列表 -->
+						<div class="col-list">
+							<h4 class="col_list_title">系列讲座列表</h4>
+							<div class="col_inner_list">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								  <div class="panel panel-default">
+								    <div class="panel-heading" role="tab" id="headingTwo">
+								      <h4 class="panel-title">
+								      <i class="fa fa-youtube-play mr5"></i>
+								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								         Vue.js 
+								        </a>
+								         <a class="col_try">试看讲座</a>
+								      </h4>
+								    </div>
+								    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								      <div class="panel-body">
+								       <h4><small>开始时间：2017-06-21 20:00</small></h4>
+								        <h4><small>组件（Component）是 Vue.js 最核心的功能，也是整个框架设计最精彩的地方，当然也是最难掌握的。本课程将带领你由浅入深地学习组件的全部内容，并通过几个实战项目熟练使用 Vue 组件。</small></h4>
+								        <button class="button btn-md btn-primary col_morelecture">查看更多</button>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="panel panel-default">
+								    <div class="panel-heading" role="tab" id="headingTwo">
+								      <h4 class="panel-title">
+								      <i class="fa fa-youtube-play mr5"></i>
+								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								          Vue.js 
+								        </a>
+								         <a class="col_try">试看讲座</a>
+								      </h4>
+								    </div>
+								    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								      <div class="panel-body">
+								       <h4><small>开始时间：2017-06-21 20:00</small></h4>
+								        <h4><small>组件（Component）是 Vue.js 最核心的功能，也是整个框架设计最精彩的地方，当然也是最难掌握的。本课程将带领你由浅入深地学习组件的全部内容，并通过几个实战项目熟练使用 Vue 组件。</small></h4>
+								        <button class="button btn-md btn-primary col_morelecture">查看更多</button>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="panel panel-default">
+								    <div class="panel-heading" role="tab" id="headingThree">
+								      <h4 class="panel-title">
+								      <i class="fa fa-youtube-play mr5"></i>
+								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								          Vue.js   
+								        </a>
+								         <a class="col_try">试看讲座</a>
+								      </h4>
+								    </div>
+								    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								      <div class="panel-body">
+								        <h4><small>开始时间：2017-06-21 20:00</small></h4>
+								        <h4><small>组件（Component）是 Vue.js 最核心的功能，也是整个框架设计最精彩的地方，当然也是最难掌握的。本课程将带领你由浅入深地学习组件的全部内容，并通过几个实战项目熟练使用 Vue 组件。</small></h4>
+								        <button class="button btn-md btn-primary col_morelecture">查看更多</button>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="panel panel-default">
+								    <div class="panel-heading" role="tab" id="headingThree">
+								      <h4 class="panel-title">
+								      <i class="fa fa-youtube-play mr5"></i>
+								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								          Vue.js 实战之 Render 函数
+								        </a>
+								         <a class="col_try">试看讲座</a>
+								      </h4>
+								    </div>
+								    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								      <div class="panel-body">
+								        <h4><small>开始时间：2017-06-21 20:00</small></h4>
+								        <h4><small>组件（Component）是 Vue.js 最核心的功能，也是整个框架设计最精彩的地方，当然也是最难掌握的。本课程将带领你由浅入深地学习组件的全部内容，并通过几个实战项目熟练使用 Vue 组件。</small></h4>
+								        <button class="button btn-md btn-primary col_morelecture">查看更多</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<!-- 评价 -->
+						<div class="col_pj_count">
+							<div class="col-num_title">
+								<h4>11 条评价</h4>
+							</div>
+							<div class="col_pj">
+							 <!-- 评价列表 -->
+								<ul class="media-list">
+								<!-- 1 -->
+								  <li class="media">
+								    <div class="media-left">
+								      <a href="#">
+								        <img class="media-object" src="../images/user-1.png" alt="...">
+								      </a>
+								    </div>
+								    <div class="media-body">
+								      <h4 class="media-heading">
+								      	<a class="col_name" href="#">可怕</a>
+								      	<span class="col_data">6月15日</span>
+								      	<div class="col_pj_star">
+								      		<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+								      	</div>
+							      	  </h4>
+							        <p class="col_pj_content">老师，课程有没有交流群</p>
+							        <i class="fa fa-thumbs-up col_pj_zan"></i><span class="col_pj_zan"> 赞</span><span class="col_zan_plus">+1</span>
+								    </div>
+								  </li>
+								  <!-- 2 -->
+								   <li class="media">
+								    <div class="media-left">
+								      <a href="#">
+								        <img class="media-object" src="../images/user-2.png" alt="...">
+								      </a>
+								    </div>
+								    <div class="media-body">
+								      <h4 class="media-heading">
+								      	<a class="col_name" href="#">zjutszl </a>
+								      	<span class="col_data">6月1日</span>
+								      	<div class="col_pj_star">
+								      		<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+								      	</div>
+							      	</h4>
+							       <p class="col_pj_content">老师，课程有没有交流群</p>
+							        <i class="fa fa-thumbs-up col_pj_zan"></i><span class="col_pj_zan"> 赞</span><span class="col_zan_plus">+1</span>
+								    </div>
+								  </li>
+								  <!-- 3 -->
+								   <li class="media">
+								    <div class="media-left">
+								      <a href="#">
+								        <img class="media-object" src="../images/user-3.png" alt="...">
+								      </a>
+								    </div>
+								    <div class="media-body">
+								      <h4 class="media-heading">
+								      	<a class="col_name" href="#">fish </a>
+								      	<span class="col_data">4月11日</span>
+								      	<div class="col_pj_star">
+								      		<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+											<i class="glyphicon glyphicon-star"></i>
+								      	</div>
+							      	</h4>
+							        <p class="col_pj_content">教主威武霸气，一统江湖
+									</p>
+							        <i class="fa fa-thumbs-up col_pj_zan"></i><span class="col_pj_zan"> 赞</span><span class="col_zan_plus">+1</span>
+								    </div>
+								  </li>
+								</ul>
+							</div>
+							<!-- 分页 -->
+							<div class="col_page">
+								<nav aria-label="Page navigation">
+								  <ul class="pagination">
+								    <li class="page_active"><a href="#">1</a></li>
+								    <li><a href="#">2</a></li>
+								    <li>
+								      <a href="#" aria-label="Next">
+								        <span aria-hidden="true">下一页</span>
+								      </a>
+								    </li>
+								  </ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<!-- 讲师介绍 -->
+						<div class="col_teacher">
+							<div class="media">
+							<h4>讲师介绍</h4>
+							  <div class="media-left">
+							    <a href="#">
+							      <img class="media-object" src= '../images/user_4.jpg' alt="...">
+							    </a>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">
+							      	<a class="col_name" href="#">Aresn</a>
+					      	    </h4>
+							    <div class="col_swang">
+							    	<p class="col_sw_num">7.9k 声望</p>
+							    	<div class="col_sw_span">
+							    		<span><i class="badge_icon sw_i1"></i></span>
+								    	<span>2</span>
+								    	<span><i class="badge_icon sw_i2"></i></span>
+								    	<span>8</span>
+								    	<span><i class="badge_icon sw_i3"></i></span>
+								    	<span>18</span>
+							    	</div>
+							    	
+							    </div>
+							  </div>
+							  <p class="col_media_content">Hi，我是 Aresn，基于 Vue.js 的开源 UI 组件库 — iView 的作者，大数据公司 TalkingData可视化架构师。创办了高逼格程序员社区 TalkingCoder。出版了《Vue.js实战》一书。除了前端，也对 Python、Hybrid、Electron 等技术感兴趣。更多关于我的内容可以查看这篇文章：<a href="">https://segmentfault.com/a/1</a>，我们可以加个好友，一起学习</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+			<!-- footer -->
+	<footer>
+		<div class="container">
+			<!-- footer_con -->
+			<div class="footer_con">
+				<div class="col-md-2 f_con">
+					<h4>产品</h4>
+					<ul class="f_ul">
+						<li>热门回答</li>
+						<li>热门专栏</li>
+						<li>热门讲堂</li>
+						<li>最新活动</li>
+						<li>圈子</li>
+						<li>找工作</li>
+						<li>移动客户端</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>资源</h4>
+					<ul class="f_ul">
+						<li>每周精选</li>
+						<li>用户排行榜</li>
+						<li>徽章</li>
+						<li>帮助中心</li>
+						<li>声望与权限</li>
+						<li>社区服务中心</li>
+						<li>开发手册</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>商务</h4>
+					<ul class="f_ul">
+						<li>人才服务</li>
+						<li>企业培训</li>
+						<li>活动策划</li>
+						<li>广告投放</li>
+						<li>区块链解决方案</li>
+						<li>合作联系</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>关于</h4>
+					<ul class="f_ul">
+						<li>关于我们</li>
+						<li>加入我们</li>
+						<li>联系我们</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>关注</h4>
+					<ul class="f_ul">
+						<li>产品技术日志</li>
+						<li>社区运营日志</li>
+						<li>市场运营日志</li>
+						<li>团队日志</li>
+						<li>社区访谈</li>
+						<li class="share">
+							<i href="#" class="iconfont icon-wechat share_1">
+								<div class="share_pic">
+									<img src="../images/appQrcode.png" alt="">
+									<p>关注微信号</p>
+									<span></span>
+								</div>
+							</i>
+							<i href="#" class="iconfont icon-weibo share_2"></i>
+							<i href="#" class="iconfont icon-github share_3"></i>
+							<i href="#" class="iconfont icon-twitter share_4"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>条款</h4>
+					<ul class="f_ul">
+						<li>服务条款</li>
+						<li>内容许可</li>
+						<li class="app"><img src="../images/appQrcode.png" alt="" class="sf"></li>
+						<li>扫一扫下载APP</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 版权 copyright -->
+			<div class="copyright">
+				<p>Copyright © 2011-2018 SegmentFault. 当前呈现版本 17.06.16</p>
+				<p>
+					<a href="#" onclick="return false">浙ICP备 15005796号-2&nbsp;</a>
+					<a href="#" onclick="return false"> 浙公网安备 33010602002000号&nbsp;</a>
+					杭州堆栈科技有限公司版权所有
+				</p>
+				<p class="sponsor">
+					CDN 存储服务由
+					<a href="#" onclick="return false">又拍云</a>
+					赞助提供
+				</p>
+			</div>
+		</div>
+	</footer>	
+		<!-- 回到顶部 -->
+		<div class="col_return_top">
+			<span>回顶部</span>
+		</div>
+		<script src = '../js/jquery.min.js'></script>
+		<script src = '../js/bootstrap.min.js'></script>
+		<script src="../js/nav.js"></script>
+		<script src = '../js/common.js'></script>
+	</body>
+</html>

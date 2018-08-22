@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>专栏</title>
+		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="../css/Question and answer.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/special.css">
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../font_xld8by73zt/iconfont.css">
+		<link rel="stylesheet" href="../css/footer.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<!-- container -->
+		  	<div class="container">
+			    <div class="navbar-header logo-center">
+			      	<!-- logo -->
+			      	<a class="navbar-brand" href="../index.html">
+				      	<h1>
+				      		<img src="../images/logo-b.svg" alt="">
+				      	</h1>
+				    </a>
+			    </div>
+
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    		<span class="glyphicon glyphicon-search top_search visible-sm visible-xs"></span>
+	    			<!-- 左侧导航条 -->
+	    			<div class="change clearfix hidden-sm hidden-xs">
+				      	<ul class="nav navbar-nav clearfix">
+					        <li class="active"><a href="../index.html">首页<span class="sr-only">(current)</span></a></li>
+					        <li><a href="Question-and-answer.html">问答</a></li>
+					        <li><a href="special.html">专栏</a></li>
+					        <li><a href="lecture.html">讲堂</a></li>
+					        <li class="dropdown find">
+					          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现<span class="caret"></span></a>
+					          	<div class="dropdown-block">
+						          	<ul class="dropdown-menu clearfix">
+							            <li><a href="circle.html">圈子</a></li>
+							            <li><a href="activity.html">活动</a></li>
+							            <li><a href="#">标签</a></li>
+							            <li><a href="find_work.html">找工作</a></li>
+							            <li><a href="#">排行榜</a></li>
+							            <li><a href="find_work.html">找工作</a></li>
+							            <li><a href="#">徽章</a></li>
+							            <li><a href="find_notes.html">笔记</a></li>
+							            <li><a href="#">开发手册</a></li>
+							            <li><a href="#">广告投放</a></li>
+							        </ul>
+							        <div class="ul-active">
+							        	<a href="activity_isc.html">
+							        		<h5>2018首届“顶天立地”iFLYTEK AI开发者大赛</h5>
+							        	</a>
+							        	<span>合肥</span> · 
+							        	<span>2018-07-11 周三</span> · 
+							        	<span>报名中</span>
+							        	<div class="more">
+							        		<a href="activity.html">查看更多活动</a>
+							        	</div>
+							        </div>
+						        </div>
+					        </li>
+				        </ul>
+				        <!-- 搜索框 -->
+			      		<form class="navbar-form navbar-left clearfix">
+					        <div class="form-group">
+					          <input type="text" class="form-control" placeholder="搜索问题或关键字">
+					          <span class="glyphicon glyphicon-search search visible-lg"></span>
+					        </div>
+			      		</form>
+		      		</div>
+	      		    <!-- 右侧导航条和图标 -->
+		      		<ul class="nav navbar-nav navbar-right">
+				        <li class="dropdown found visible-lg">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">创建<span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="question.html">提问题</a></li>
+				            <li><a href="headline.html">发头条</a></li>
+				            <li><a href="article.html">写文章</a></li>
+				            <li><a href="note.html">记笔记</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">草稿箱</a></li>
+				          </ul>
+				        </li>
+				        <li class="dropdown found hidden-lg">
+				          <a href="#" class="dropdown-toggle fa fa-plus" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="question.html">提问题</a></li>
+				            <li><a href="headline.html">发头条</a></li>
+				            <li><a href="article.html">写文章</a></li>
+				            <li><a href="note.html">记笔记</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">草稿箱</a></li>
+				          </ul>
+				        </li>
+				        <li class="index-msg-li">
+				        	<a href="#" class="fa fa-bell-o hidden-sm hidden-xs"></a>
+				        	<div class="index-msg clearfix">
+				        		<div class="msg-header">
+				        			<ul class="clearfix">
+				        				<li class="active"><a href="#"><i class="fa fa-bullhorn"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-commenting-o"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-thumbs-o-up"></i></a></li>
+				        				<li><a href="#"><i class="fa fa-user-plus"></i></a></li>
+				        			</ul>
+				        		</div>
+				        		<div class="msg-body"></div>
+				        		<div class="msg-footer">
+				        			<span>查看全部 >> </span>
+				        		</div>
+				        	</div>
+				        </li>
+				        <li class="index-private-li"> 
+				        	<a href="#" class="fa fa-envelope-o hidden-sm hidden-xs"></a>
+				        	<div class="index-private clearfix">
+				        		<div class="msg-header">
+				        			<span>最近的私信</span>
+				        		</div>
+				        		<div class="msg-body">
+				        			<p>没有人给你发私信</p>
+				        		</div>
+				        		<div class="msg-footer">
+				        			<span>查看全部 >> </span>
+				        		</div>
+				        	</div>
+				        </li>
+				        <li class="me">
+				        	<a href="personal.html" class="user"><img src="../images/user-64.png" alt="头像"></a>
+				        	<div class="user-info">
+				        		<div class="info-score clearfix">
+				        			<span>1 声望</span>
+				        			<div class="clearfix">
+				        				<span><b></b>0</span>
+				        				<span><b></b>1</span>
+				        				<span><b></b>2</span>
+				        			</div>
+				        		</div>
+				        		<hr>
+				        		<div class="info">
+				        			<ul class="clearfix">
+				        				<li><a href="#">我的笔记</a></li>
+				        				<li><a href="#">我的主页</a></li>
+				        				<li><a href="#">我的收藏</a></li>
+				        				<li><a href="#">我的档案</a></li>
+				        				<li><a href="#">受邀回答</a></li>
+				        				<li><a href="#">我的资产</a></li>
+				        				<li><a href="#">付费问答</a></li>
+				        				<li><a href="personal.html">个人设置</a></li>
+				        				<li><a href="#">退出</a></li>
+				        			</ul>
+				        		</div>
+				        		<hr>
+				        		<div class="info-footer">
+				        			<a href="#">用户申诉</a> · 
+				        			<a href="#">建议反馈</a> · 
+				        			<a href="#">邀请朋友</a>
+				        		</div>
+				        	</div>
+				        </li>
+		      		</ul>
+		    	</div>
+		    </div>
+		</nav>
+		<!-- 小屏底部导航条 -->
+		<nav class="phone-nav hidden-md hidden-lg">
+			<ul>
+				<li class="active">
+					<a href="../index.hmtl"><i class="fa fa-home"></i><span>首页</span></a>
+				</li>
+				<li>
+					<a href="Question-and-answer.html"><i class="fa fa-comments"></i><span>问答</span></a>
+				</li>
+				<li><a href="special.html"><i class="fa fa-pencil-square"></i><span>专栏</span></a></li>
+				<li><a href="lecture.html"><i class="fa fa-play-circle"></i><span>讲堂</span></a></li>
+				<li class="phone-nav-dropdown">
+					<a href="#"><i class="fa fa-bars"></i><span>更多</span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">职位</a></li>
+						<li><a href="activity.html">活动</a></li>
+						<li><a href="#">标签</a></li>
+						<li><a href="#">徽章</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- 绿色的banner -->
+		<section class="aq_banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="aq_banner_main">
+							<div class="col-md-6">
+								<h2>在 SegmentFault，学习技能、解决问题</h2>
+								<h4>每个月，我们帮助 1000 万的开发者解决各种各样的技术问题。并助力他们在技术能力、职业生涯、影响力上获得提升。</h4>
+							</div>
+							<div class="col-md-4 col-xs-offset-2">
+								<div class="aq_banner_button">
+									<button class="aq_banner_register">免费注册</button>
+									<button class="aq_banner_login">立即登录</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aq_close">
+				<span>x</span>
+			</div>
+		</section>
+		<!-- 中间模块 -->
+		<section class="aq_main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="aq_list">
+							<div class="aq_list_nav">
+								<ul class="nav nav-tabs">
+								  <li role="presentation" class="active"><a href="#">推荐文章</a></li>
+								  <li role="presentation"><a href="#">最新文章</a></li>
+								  <li role="presentation"><a href="#">热门文章</a></li>
+								</ul>
+							</div>
+							<!-- 问答内容 -->
+							<div class="aq_list_content">
+								<!-- item1 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item2 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item3 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item4 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item5 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item6 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item7 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item8 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item9 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+								<!-- item10 -->
+								<div class="aq_list_item">
+									<div class="sp_up pull-left">
+										<i class="fa fa-sort-asc" aria-hidden="true"></i>
+										<p>36</p>
+									</div>
+									<div class="aq_summery pull-left">
+										<h4>RESETful API 设计规范</h4>
+										<span class="sq_yuan">原</span>
+										<ul class="unstyled list-inline">
+											<li class="sq_item_img"><img src="../images/user_5.jpg" alt=""></li>
+											<li><h5><small><a class="sq_font_green" href="">gongtiexin</a></small></h5></li>
+											<li><h5><small>18 小时前 发布于</small></h5></li>
+											<li><h5><small> <a href=""  class="sq_font_green">self.文章</a></small></h5></li>
+											<li><i class="glyphicon glyphicon-bookmark"></i><span  class="sq_item_gray">12 收藏</span></li>
+										</ul>
+										<p class="sp_text">每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执,每次写文章时，总会感慨万千。面对成功，我们总是抱以较高的期望，总想急不可耐就能得到胜利的果实。可每一次成功不可能轻而易举的就来到我们的面前。几乎每一次都需要我们付出极大的耐心和勤奋，甚至于近乎偏执</p>	
+									</div>
+								</div>
+
+							</div>
+							<!-- 分页 -->
+							<div class="col_page">
+								<nav aria-label="Page navigation">
+								  <ul class="pagination">
+								    <li class="page_active"><a href="#">1</a></li>
+								    <li><a href="#">2</a></li>
+								    <li><a href="#">3</a></li>
+								    <li>
+								      <a href="#" aria-label="Next">
+								        <span aria-hidden="true">下一页</span>
+								      </a>
+								    </li>
+								  </ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<!-- 广告 -->
+					<div class="col-md-3">
+						<!-- 广告图片 -->
+						<div class="aq_advantage">
+							<div class="aq_adv_pic">
+								<img src="../images/advantage.png" alt="">
+								<a href="#"><h6 class="text-center"><small>想在上方展示你的广告？</small></h6></a>
+							</div>
+						</div>
+						<!-- 热门专栏 -->
+						<div class="sp_hotlan">
+						<h5>热门专栏</h5>
+							<!-- 1 -->
+							<div class="media">
+							  <div class="media-left">
+							    <p>1</p>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">寒青</h4>
+							    <p>前端世界如此喧嚣，能进阶的何其稀前端世界如此喧嚣</p>
+							  </div>
+							</div>
+							<!-- 2 -->
+							<div class="media">
+							  <div class="media-left">
+							    <p>2</p>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">寒青</h4>
+							    <p>@阿里巴巴</p>
+							  </div>
+							</div>
+							<!-- 3 -->
+							<div class="media">
+							  <div class="media-left">
+							    <p>3</p>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">寒青</h4>
+							    <p>前端世界如此喧嚣，能进阶的何其稀前端世界如此喧嚣</p>
+							  </div>
+							</div>
+							<!-- 4 -->
+							<div class="media">
+							  <div class="media-left">
+							    <p>4</p>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">寒青</h4>
+							    <p>随笔</p>
+							  </div>
+							</div>
+							<!-- 5 -->
+							<div class="media">
+							  <div class="media-left">
+							    <p>5</p>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">寒青</h4>
+							    <p>@阿里巴巴</p>
+							  </div>
+							</div>
+						</div>
+						<!-- 热门标签 -->
+						<div class="sp_hotlan">
+						<h5>热门标签</h5>
+							<ul class="list-unstyled sp_hotbiao_list ">
+								<li><a href="">javascript</a><span> × 87</span></li>
+								<li><a href="">java</a><span> × 62</span></li>
+								<li><a href="">vue.js</a><span> × 34</span></li>
+								<li><a href="">前端</a><span> × 33</span></li>
+								<li><a href="">css</a><span> × 28</span></li>
+								<li><a href="">php</a><span> × 28</span></li>
+								<li><a href="">html5</a><span> × 22</span></li>
+								<li><a href="">html</a><span> × 18</span></li>
+								<li><a href="">node.js</a><span> × 17</span></li>
+								<li><a href="">react.js</a><span> × 15</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container aq_book">
+			<img src="../images/book.png" alt=""><a href="">订阅本页 RSS</a>
+		</div>
+			<!-- footer -->
+	<footer>
+		<div class="container">
+			<!-- footer_con -->
+			<div class="footer_con">
+				<div class="col-md-2 f_con">
+					<h4>产品</h4>
+					<ul class="f_ul">
+						<li>热门回答</li>
+						<li>热门专栏</li>
+						<li>热门讲堂</li>
+						<li>最新活动</li>
+						<li>圈子</li>
+						<li>找工作</li>
+						<li>移动客户端</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>资源</h4>
+					<ul class="f_ul">
+						<li>每周精选</li>
+						<li>用户排行榜</li>
+						<li>徽章</li>
+						<li>帮助中心</li>
+						<li>声望与权限</li>
+						<li>社区服务中心</li>
+						<li>开发手册</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>商务</h4>
+					<ul class="f_ul">
+						<li>人才服务</li>
+						<li>企业培训</li>
+						<li>活动策划</li>
+						<li>广告投放</li>
+						<li>区块链解决方案</li>
+						<li>合作联系</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>关于</h4>
+					<ul class="f_ul">
+						<li>关于我们</li>
+						<li>加入我们</li>
+						<li>联系我们</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>关注</h4>
+					<ul class="f_ul">
+						<li>产品技术日志</li>
+						<li>社区运营日志</li>
+						<li>市场运营日志</li>
+						<li>团队日志</li>
+						<li>社区访谈</li>
+						<li class="share">
+							<i href="#" class="iconfont icon-wechat share_1">
+								<div class="share_pic">
+									<img src="../images/appQrcode.png" alt="">
+									<p>关注微信号</p>
+									<span></span>
+								</div>
+							</i>
+							<i href="#" class="iconfont icon-weibo share_2"></i>
+							<i href="#" class="iconfont icon-github share_3"></i>
+							<i href="#" class="iconfont icon-twitter share_4"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 f_con">
+					<h4>条款</h4>
+					<ul class="f_ul">
+						<li>服务条款</li>
+						<li>内容许可</li>
+						<li class="app"><img src="../images/appQrcode.png" alt="" class="sf"></li>
+						<li>扫一扫下载APP</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 版权 copyright -->
+			<div class="copyright">
+				<p>Copyright © 2011-2018 SegmentFault. 当前呈现版本 17.06.16</p>
+				<p>
+					<a href="#" onclick="return false">浙ICP备 15005796号-2&nbsp;</a>
+					<a href="#" onclick="return false"> 浙公网安备 33010602002000号&nbsp;</a>
+					杭州堆栈科技有限公司版权所有
+				</p>
+				<p class="sponsor">
+					CDN 存储服务由
+					<a href="#" onclick="return false">又拍云</a>
+					赞助提供
+				</p>
+			</div>
+		</div>
+	</footer>	
+		<!-- 回到顶部 -->
+		<div class="col_return_top">
+			<span>回顶部</span>
+		</div>
+		<script src = '../js/jquery.min.js'></script>
+		<script src = '../js/bootstrap.min.js'></script>
+		<script src = '../js/nav.js'></script>
+		<script src = '../js/common.js'></script>
+		<script>
+			$('.aq_list_item .sp_up').hover(function() {
+				$(this).children('i').css('color', '#009a61');
+				$(this).children('p').css('color', '#009a61');
+			}, function() {
+				$(this).children('i').css('color', '#666');
+				$(this).children('p').css('color', '#666');
+			});
+		</script>
+	</body>
+</html>
